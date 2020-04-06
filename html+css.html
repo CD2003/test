@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 	<!-- HTML5を示す -->
 <html>			
 	<!-- HTMLドキュメントであることを示す --> 
 	<head>
 		<!-- ドキュメントに関わる情報(メタデータ)を記述 -->
 		<meta charset="UTF-8">	<!-- meta ###で要素情報(メタデータ)を示す -->
 					<!-- charset="##"で文字コードの指定
-					     Linuxの場合、UTF-8を指定しないと文字化けする!! -->
-		<title>
-			<!-- タイトルの表示 -->
+					     Linuxの場合、UTF-8を指定しないと文字化けする -->
+		
+		<!-- meta name = "#" content = "##"でメタデータ#(author, keywords, ...)に##を登録 -->		     
+		<meta name = "author" content = "CD2003">
+		<meta name = "keywords" content = "HTML, CSS, Practice">
+		<meta name = "description" content = "htmlの練習">
+
+		<title>	
 			HTML+CSS_P11
-		</title>
+		</title>	<!-- タイトル
+				     間にコメントを入れないほうが良い(RCDATAで処理されるから？ -->
 	</head>
 
 	<body onload = "alert('これはテストです')">
@@ -22,12 +28,12 @@
 		<ul>
 			<!-- ulは箇条書き
 			     番号付き箇条書きにしたいならば、olを使用-->
-			<li value="2">
+			     <li value="1">
 				<!-- liはリスト
 	    			     value = "#"を追記すると、#を記述(ただし、ulでなくolで有効) -->
 				Webページ用の文書を記述するために開発された言語
 			</li>
-			<li value="1">
+			<li value="2">
 				タグを使用して文書構造を示す
 			</li>
 		</ul>
@@ -35,6 +41,7 @@
 			HTMLの基本構造
 		</h2>
 		<p>
+			<!-- pは段落 -->
 			HTML文書は、html要素を基点とする<em>木構造</em>になっています。
 		</p>
 	</body>

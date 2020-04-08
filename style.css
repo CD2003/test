@@ -1,4 +1,8 @@
 @charset "UTF-8";
-h1 {
-	color:blue;
+/* クラスセレクタ
+   他に似た機能を持つセレクタにはIDセレクタがあるが、
+   通常はクラスセレクタを用い、Javascriptで使用することがある */
+.head {
+	color:red;
+	font-style:italic;
 }

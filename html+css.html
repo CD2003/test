@@ -22,8 +22,8 @@
 
 	<body onload = "alert('これはテストです')">
 		<!-- ドキュメントのコンテンツを示す
-		     onload属性を指定すると、ページ表示の際、ウィンドウが表示される -->
-		<h1>
+		     onload属性を指定すると、ページ表示の際、ウィンドウが表示される -->	
+		<h1 class = "head">
 			<!-- h#は見出し -->
 			HTMLとは
 		</h1>
@@ -33,7 +33,7 @@
 			     <li value="1">
 				<!-- liはリスト
 	    			     value = "#"を追記すると、#を記述(ただし、ulでなくolで有効) -->
-				Webページ用の文書を記述するために開発された言語
+				     Webページ用の文書を記述するために開発された<span class = "head">言語</span> <!-- spanは汎用的な範囲の設定に使用 -->
 			</li>
 			<li value="2">
 				タグを使用して文書構造を示す
@@ -46,5 +46,9 @@
 			<!-- pは段落 -->
 			HTML文書は、html要素を基点とする<em>木構造</em>になっています。
 		</p>
-	</body>
+
+		<address> <!-- adressは問い合わせ先の表示。個人情報が漏れるので取扱注意!! -->
+			E-mail:<a href = "mailto:test@test.test">test@test.test</a>
+		</address>
+		</body>
 </html>

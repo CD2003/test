@@ -13,7 +13,7 @@
 		<meta name = "description" content = "htmlの練習">
 
 		<title>	
-			HTML+CSS_P11
+			HTML+CSS
 		</title>	<!-- タイトル
 				     間にコメントを入れないほうが良い(RCDATAで処理されるから？ -->
 
@@ -23,30 +23,51 @@
 	<body onload = "alert('これはテストです')">
 		<!-- ドキュメントのコンテンツを示す
 		     onload属性を指定すると、ページ表示の際、ウィンドウが表示される -->	
-		<h1 class = "head">
+		<h1>
 			<!-- h#は見出し -->
-			HTMLとは
+			HTML、CSSのお勉強
 		</h1>
+		<hr>	<!-- hrは横羅線を引く -->
+		<p> HTMLとCSSの勉強部屋です。</p>
+		<hr>
 		<ul>
 			<!-- ulは箇条書き
 			     番号付き箇条書きにしたいならば、olを使用-->
-			     <li value="1">
+			<li>
 				<!-- liはリスト
 	    			     value = "#"を追記すると、#を記述(ただし、ulでなくolで有効) -->
-				     Webページ用の文書を記述するために開発された<span class = "head">言語</span> <!-- spanは汎用的な範囲の設定に使用 -->
+				<a href = "html+css_0.html">基礎知識</a> 基礎知識
 			</li>
-			<li value="2">
-				タグを使用して文書構造を示す
+			<li>
+				<a href = "html+css_1.html">テキスト</a> テキスト
+			</li>
+			<li>
+				<a href = "html+css_2.html">フォント</a> フォント
+			</li>
+			<li>
+				<a href = "html+css_3.html">ページと記憶</a> ページと記憶
+			</li>
+			<li>
+				<a href = "html+css_4.html">画像</a> 画像
+			</li>
+			<li>
+				<a href = "html+css_5.html">リンク</a> リンク
+			</li>
+			<li>
+				<a href = "html+css_6.html">リスト</a> リスト
+			</li>
+			<li>
+				<a href = "html+css_7.html">テーブル</a> テーブル
+			</li>
+			<li>
+				<a href = "html+css_8.html">フォーム</a> フォーム
+			</li>
+			<li>
+				<a href = "html+css_9.html">その他</a> その他
 			</li>
 		</ul>
-		<h2>
-			HTMLの基本構造
-		</h2>
-		<p>
-			<!-- pは段落 -->
-			HTML文書は、html要素を基点とする<em>木構造</em>になっています。
-		</p>
 
+		<hr>
 		<address> <!-- adressは問い合わせ先の表示。個人情報が漏れるので取扱注意!! -->
 			E-mail:<a href = "mailto:test@test.test">test@test.test</a>
 		</address>

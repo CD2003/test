@@ -2,13 +2,55 @@
 /* クラスセレクタ
    他に似た機能を持つセレクタにはIDセレクタがあるが、
    通常はクラスセレクタを用い、Javascriptで使用することがある */
-h1  {
+#page_title  {
 	text-align:center;	
 	color:red;
-	font-family:'Times New Roman', 'MS Gothic';
+	/* font-family:'Times New Roman', 'MS Gothic'; */
 	font-size:32pt;
 	}
-.head {
+
+#nav_frame {
+	border:2pt gray solid;
+	background-color:orange;
+}
+
+#def_title {
+	border-left:15pt blue solid;
+	border-bottom:2pt blue double;
+	color:blue;
+}
+
+#def_func {
+	border-bottom:2pt gray dashed;
+}
+
+#def_exp {
+	border-top:2pt gray solid;
+}
+
+#h4_hatch {
+	border-left:2pt black solid;
+	border-right:2pt black solid;
+	border-bottom:2pt black dashed;
+}
+
+#head {
+	background-color:orange;
 	color:red;
 	font-style:italic;
 }
+/*
+table{
+	border:2px black solid;
+}
+
+table thead{
+	background: orange;
+	font-size:30pt;
+}
+
+table tbody tr td{	
+	border-bottom:2px black dashed;
+	font-size:20pt;
+}
+*/

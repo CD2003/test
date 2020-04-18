@@ -8,34 +8,67 @@
 		<title>
 			テキスト
 		</title>
+		<link = rel = "stylesheet" href = "style.css" type = "text/css">
 	</head>
 
 	<body>
-		<h1>
+		<h1 id = "page_title">
 			HTMLのテキスト
 		</h1>
 		<hr>
-		<ul>
-			<li>
-				<h2>
-					&lt;h#&gt;〜&lt;/h#&gt;
-				</h2>
-				<p> #………1〜6 </p>
-				<p> 　見出しであることを示す。見出しには6段階まであり(1が最上位、6が最下位)</p>
-			</li>
-			<li>
-				<h2>
-					&lt;p&gt;〜&lt;/p&gt;
-				</h2>
-				<p>　1つの段落であることを示す。</p>
-			</li>
-			<li>
-				<h2>
-					&lt;br&gt;
-				</h2>
-				<p>　改行を示す。</p>
-			</li>
-		</ul>
+		
+		<h2 id = "def_title">
+			見出しを表示する
+		</h2>
+		<h2>
+			<font color = orange>&lth&#9733&gt</font color>〜<font color = orange>&lt/h&#9733&gt</font color>
+		</h2>
+		<p>
+			見出しであることを示す。&#9733;には数値を入力(1〜6、小さいほど上位)
+		</p>
+		<nav id = "nav_frame">
+			&lt;h1&gt;見出し1&lt;/h1&gt;<br>
+			&lt;h2&gt;見出し2&lt;/h2&gt;<br>
+			&lt;h3&gt;見出し3&lt;/h3&gt;<br>
+			&lt;h4&gt;見出し4&lt;/h4&gt;<br>
+			&lt;h5&gt;見出し5&lt;/h5&gt;<br>
+			&lt;h6&gt;見出し6&lt;/h6&gt;
+		</nav>
+		<h3>
+			&#9702出力結果
+		</h3>
+		<p>
+			<h1>見出し1</h1>
+			<h2>見出し2</h2>
+			<h3>見出し3</h3>
+			<h4>見出し4</h4>
+			<h5>見出し5</h5>
+			<h6>見出し6</h6>
+		</p>	
+	
+		<h2 id = "def_title">
+			段落を指定する
+		</h2>
+		<h2>
+			<font color = orange>&ltp&gt</font color>〜<font color = orange>&lt/p&gt</font color>
+		</h2>
+		<p>　1つの段落であることを示す。</p>
+		<nav id = "nav_frame">
+			&lt;p&gt;こんばんは&lt;/p&gt;<br>
+			&lt;p&gt;さようなら&lt;/p&gt;
+		</nav>
+		<h3>
+			&#9702出力結果
+		</h3>
+		<p>
+			<p>こんばんは</p>
+			<p>さようなら</p>
+		</p>
+
+		<h2>
+			&lt;br&gt;
+		</h2>
+		<p>　改行を示す。</p>
 		<hr>
 		<a href = "html+css_0.html">基礎へ</a>　　　
 		<a href = "html+css_2.html">フォントへ</a>

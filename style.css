@@ -9,12 +9,19 @@
 	font-size:32pt;
 	}
 
+#nav_margin {
+	margin-right:50px;
+}
+
 #nav_frame {
-	border:2pt gray solid;
-	background-color:orange;
+	margin-left:40px;
+	margin-right:400px;
+	border:1pt gray solid;
+	background-color:#E0FFFF;
 }
 
 #def_title {
+	margin-bottom:2.5px;
 	border-left:15pt blue solid;
 	border-bottom:2pt blue double;
 	color:blue;
@@ -39,6 +46,16 @@
 	color:red;
 	font-style:italic;
 }
+
+#def_com {
+	margin-top:2.5px;
+}
+
+#nav_sample {
+	margin-left:40px;
+	margin-right:400px;
+}
+
 /*
 table{
 	border:2px black solid;

@@ -6,18 +6,22 @@
 	text-align:center;	
 	color:red;
 	/* font-family:'Times New Roman', 'MS Gothic'; */
-	font-size:32pt;
+	/* font-size:32pt; */
 	}
 
+#test {
+	margin:10px;
+}
+
 #nav_margin {
-	margin-right:50px;
+	margin-left:40px;
 }
 
 #nav_frame {
 	margin-left:40px;
 	margin-right:400px;
 	border:1pt gray solid;
-	background-color:#E0FFFF;
+	background-color:#EEFFFF;
 }
 
 #def_title {

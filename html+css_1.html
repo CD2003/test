@@ -16,38 +16,47 @@
 			HTMLのテキスト
 		</h1>
 		<hr>
-	
-		<nav id = "nav_margin">
+		<h1>
+			見出し1
+		</h1>
+		<div> <!-- id = "nav_margin" -->
+			<h1>
+				見出し1
+			</h1>
 		<h2 id = "def_title">
 			見出しを表示する
 		</h2>
-		<h2 id = "def_com">
-			<font color = orange>&lth&#9733&gt</font color>〜<font color = orange>&lt/h&#9733&gt</font color>
-		</h2>
+			<h2 id = "def_com">
+				<font color = orange>&lth&#9733&gt</font color>〜<font color = orange>&lt/h&#9733&gt</font color>
+			</h2>
 		<p>
 			見出しであることを示す。&#9733;には数値を入力(1〜6、小さいほど上位)
 		</p>
-		<nav id = "nav_frame">
-			&lt;h1&gt;見出し1&lt;/h1&gt;<br>
-			&lt;h2&gt;見出し2&lt;/h2&gt;<br>
-			&lt;h3&gt;見出し3&lt;/h3&gt;<br>
-			&lt;h4&gt;見出し4&lt;/h4&gt;<br>
-			&lt;h5&gt;見出し5&lt;/h5&gt;<br>
-			&lt;h6&gt;見出し6&lt;/h6&gt;
-		</nav>
-		<h3>
+		<div id = "nav_frame">
+			<div id = "test">
+				<font color = "FF5192"><b>&lt;h1&gt;</b></font>見出し1<font color = "FF5192"><b>&lt;/h1&gt;</b></font><br>
+				<font color = "FF5192"><b>&lt;h2&gt;</b></font>見出し2<font color = "FF5192"><b>&lt;/h2&gt;</b></font><br>
+				<font color = "FF5192"><b>&lt;h3&gt;</b></font>見出し3<font color = "FF5192"><b>&lt;/h3&gt;</b></font><br>
+				<font color = "FF5192"><b>&lt;h4&gt;</b></font>見出し4<font color = "FF5192"><b>&lt;/h4&gt;</b></font><br>
+				<font color = "FF5192"><b>&lt;h5&gt;</b></font>見出し5<font color = "FF5192"><b>&lt;/h5&gt;</b></font><br>
+				<font color = "FF5192"><b>&lt;h6&gt;</b></font>見出し6<font color = "FF5192"><b>&lt;/h6&gt;</b></font>
+			</div>
+		</div>
+		<h3 id = "nav_margin">
 			&#9702出力結果
 		</h3>
-		<nav id = "nav_sample">
-		<p>
-			<h1>見出し1</h1>
-			<h2>見出し2</h2>
-			<h3>見出し3</h3>
-			<h4>見出し4</h4>
-			<h5>見出し5</h5>
-			<h6>見出し6</h6>
-		</p>
-		</nav>
+		<!-- nav id = "nav_sample" -->
+		<div id = "nav_frame">
+			<div id = "test">
+				<h1>見出し1</h1>
+				<h2>見出し2</h2>
+				<h3>見出し3</h3>
+				<h4>見出し4</h4>
+				<h5>見出し5</h5>
+				<h6>見出し6</h6>
+			</div>
+		</div>
+		</div>
 	
 		<h2 id = "def_title">
 			段落を指定する

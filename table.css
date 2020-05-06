@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+table.sample2
+{
+	border:2px gray solid;
+}
+
+td.sample2-1
+{
+	border:2px gray dotted;
+}
+
+td.sample2-2
+{
+	border:4px gray dashed;
+}
+
+td.sample2-3
+{
+	border:8px gray groove;
+}

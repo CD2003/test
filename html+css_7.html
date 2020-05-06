@@ -49,7 +49,7 @@
 
 			<div id = "nav_frame">
 				<div id = "test">
-					<table border = "2px gray solid">
+					<table>
 						<tr><td>ピーマン</td><td>緑色の</td><td>野菜</td></tr>
 						<tr><td>トマト</td><td>赤色の</td><td>野菜</td></tr>
 						<tr><td>蜜柑</td><td>オレンジ色の</td><td>果物</td></tr>
@@ -72,5 +72,43 @@
 			<p>
 				枠線を表示する
 			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					<font color = "FF5192"><b>&lt;table&gt;</b></font><br>
+					<font color = "FF5192"><b>&lt;tr&gt;</b></font>ピーマン<font color = "FF5192"><b>&lt;/td class&#160;&#61;&#160;&#34;sample1&#8243;&gt;&lt;td&gt;</b></font>緑色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>野菜<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
+					<font color = "FF5192"><b>&lt;tr&gt;</b></font>トマト<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>赤色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>野菜<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
+					<font color = "FF5192"><b>&lt;tr&gt;</b></font>蜜柑<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>オレンジ色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>果物<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
+					<font color = "FF5192"><b>&lt;/table&gt;</b></font><br><br>
+					&#91;CSS&#93;<br>
+					<font color = "FF5192"><b>table</b></font><br>
+					<font color = "FF5192"><b>&#123;</b></font><br>
+					&#8195;&#8195;&#8195;&#8195;<font color = "FF5192"><b>border&#045;width&#058;</b></font>2px<br>
+					&#8195;&#8195;&#8195;&#8195;<font color = "FF5192"><b>border&#045;color&#058;</b></font>gray<br>
+					&#8195;&#8195;&#8195;&#8195;<font color = "FF5192"><b>border&#045;style&#058;</b></font>solid<br>
+					<font color = "FF5192"><b>td.sample1</b></font><br>
+					<font color = "FF5192"><b>&#123;</b></font><br>
+					&#8195;&#8195;&#8195;&#8195;<font color = "FF5192"><b>border&#045;width&#058;</b></font>4px<br>
+					&#8195;&#8195;&#8195;&#8195;<font color = "FF5192"><b>border&#045;color&#058;</b></font>gray<br>
+					&#8195;&#8195;&#8195;&#8195;<font color = "FF5192"><b>border&#045;style&#058;</b></font>dotted<br>
+					<font color = "FF5192"><b>&#125;</b></font><br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-2">緑色の</td><td class = "sample2-3">野菜</td></tr>
+						<tr><td class = "border">トマト</td><td class = "border">赤色の</td><td class = "border">野菜</td class = "border"></tr>
+						<tr><td class = "border">蜜柑</td><td class = "border">オレンジ色の</td><td class = "border">果物</td></tr>
+					</table>
+				</div>
+			</div>
+			<br>
 	</body>
 </html>

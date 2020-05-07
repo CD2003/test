@@ -19,3 +19,79 @@ td.sample2-3
 {
 	border:8px gray groove;
 }
+
+td.sample2-4
+{
+	border:thin orange solid;
+}
+
+td.sample2-5
+{
+	border:medium orange solid;
+}
+
+td.sample2-6
+{
+	border:thick orange solid;
+}
+
+td.sample2-7
+{
+	border:10px orange solid;
+}
+
+td.sample2-8
+{
+	border:2px green solid;
+}
+
+td.sample2-9
+{
+	border:2px transparent solid;
+}
+
+td.sample2-10
+{
+	border:2px orange dotted;
+}
+
+td.sample2-11
+{
+	border:2px orange dashed;
+}
+
+td.sample2-12
+{
+	border:2px orange solid;
+}
+
+td.sample2-13
+{
+	border:5px orange double;
+}
+
+td.sample2-14
+{
+	border:5px orange groove;
+}
+
+td.sample2-15
+{
+	border:5px orange ridge;
+}
+
+td.sample2-16
+{
+	border:5px orange inset;
+}
+
+td.sample2-17
+{
+	border:5px orange outset;
+}
+
+td.sample2-18
+{
+	border:5px orange none;
+}
+

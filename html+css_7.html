@@ -34,7 +34,7 @@
 
 			<div id = "nav_frame">
 				<div id = "test">
-					<font color = "FF5192"><b>&lt;table&gt;</b></font><br>
+					<font id = "pink_b">&lt;table&gt;</b></font><br>
 					<font color = "FF5192"><b>&lt;tr&gt;</b></font>ピーマン<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>緑色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>野菜<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
 					<font color = "FF5192"><b>&lt;tr&gt;</b></font>トマト<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>赤色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>野菜<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
 					<font color = "FF5192"><b>&lt;tr&gt;</b></font>蜜柑<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>オレンジ色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>果物<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
@@ -71,12 +71,12 @@
 
 			<p>
 				枠線を表示する
-			</p>
+			</p>				
 
 			<div id = "nav_frame">
 				<div id = "test">
 					&#91;HTML&#93;<br>
-					<font color = "FF5192"><b>&lt;table&gt;</b></font><br>
+					<font id = "orange_b">&lt;table&gt;</b></font><br>
 					<font color = "FF5192"><b>&lt;tr&gt;</b></font>ピーマン<font color = "FF5192"><b>&lt;/td class&#160;&#61;&#160;&#34;sample1&#8243;&gt;&lt;td&gt;</b></font>緑色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>野菜<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
 					<font color = "FF5192"><b>&lt;tr&gt;</b></font>トマト<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>赤色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>野菜<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
 					<font color = "FF5192"><b>&lt;tr&gt;</b></font>蜜柑<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>オレンジ色の<font color = "FF5192"><b>&lt;/td&gt;&lt;td&gt;</b></font>果物<font color = "FF5192"><b>&lt;/td&gt;&lt;/tr&gt;</b></font><br>
@@ -104,11 +104,74 @@
 				<div id = "test">
 					<table class = "sample2">
 						<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-2">緑色の</td><td class = "sample2-3">野菜</td></tr>
-						<tr><td class = "border">トマト</td><td class = "border">赤色の</td><td class = "border">野菜</td class = "border"></tr>
-						<tr><td class = "border">蜜柑</td><td class = "border">オレンジ色の</td><td class = "border">果物</td></tr>
+						<tr><td class = "sample2-1">トマト</td><td class = "sample2-2">赤色の</td><td class = "sample2-3">野菜</td class = "border"></tr>
+						<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-2">オレンジ色の</td><td class = "sample2-3">果物</td></tr>
 					</table>
 				</div>
 			</div>
+
+			<h3 id = "aqua_b">
+				上下左右の枠線を個別に指定する	
+			</h3>
+
+			<p>
+			上下左右で枠線のステータスを変更したい場合、半角スペースで区切って書くことで変更できる。<br>
+			</p>
+			
+			<table>
+				<tr><td>&#9733;</td><td>&#58;上下左右同じ</td></tr>
+				<tr><td>&#9733;&#160;&#9670;</td><td>&#58;&#9733;が上下、&#9670;が左右</td></tr>
+				<tr><td>&#9733;&#160;&#9670;&#160;&#9650;</td><td>&#58;&#9733;が上、&#9670;が左右、&#9650;が下</td></tr>
+				<tr><td>&#9733;&#160;&#9670;&#160;&#9650;&#160;&#9679;</td><td>&#58;&#9733;が上、&#9670;が右、&#9650;が下、&#9679;が左</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の幅
+			</h3>
+
+			<p>
+				幅指定は以下を使用する。
+			</p>
+
+			<table>
+				<tr><td>thin</td><td class = "sample2-4">細い線</td></tr>
+				<tr><td>medium</td><td class = "sample2-5">中くらいの線</td></tr>
+				<tr><td>thick</td><td class = "sample2-6">太い線</td></tr>
+				<tr><td>実数値&#43;単位</td><td class = "sample2-7">10px&#40;ただし、マイナス値は指定不可&#41;</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の色
+			</h3>
+
+			<p>
+				色指定は以下を使用する。
+			</p>
+
+			<table>
+				<tr><td>色</td><td class = "sample2-8">green&#40;RGB値も可&#41;</td></tr>
+				<tr><td>transparent</td><td class = "sample2-9">透明</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の種類
+			</h3>
+
+			<p>
+				枠線の種類は以下。
+			</p>
+
+			<table>
+				<tr><td>dotted</td><td class = "sample2-10">点線</td></tr>
+				<tr><td>dashed</td><td class = "sample2-11">破線</td></tr>
+				<tr><td>solid</td><td class = "sample2-12">実線</td></tr>
+				<tr><td>double</td><td class = "sample2-13">二重線</td></tr>
+				<tr><td>groove</td><td class = "sample2-14">凹んだように見える線</td></tr>
+				<tr><td>ridge</td><td class = "sample2-15">浮き上がったように見える線</td></tr>
+				<tr><td>inset</td><td class = "sample2-16">内側が凹んだように見える線</td></tr>
+				<tr><td>outset</td><td class = "sample2-17">内側が浮き上がったように見える線</td></tr>
+				<tr><td>none、hidden</td><td class = "sample2-18">枠線非表示</td></tr>
+			</table>
 			<br>
 	</body>
 </html>

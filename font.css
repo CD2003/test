@@ -1,0 +1,27 @@
+/****1*****2*****3*****4*****5*****
+/*
+/*	   font.css
+/*	   Author:CD2003
+/*	   Date:2020/05/07
+/*
+*****1*****2*****3*****4*****5****/
+
+@charset "UTF-8";
+
+#pink_b
+{
+	color:#FF5192;
+	font-weight:bold;
+}
+
+#orange_b
+{
+	color:orange;
+	font-weight:bold;
+}
+
+#aqua_b
+{
+	color:#00ffff;
+	font-weight:bold;
+}

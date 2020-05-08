@@ -173,5 +173,154 @@
 				<tr><td>none、hidden</td><td class = "sample2-18">枠線非表示</td></tr>
 			</table>
 			<br>
+			
+			<h2 id = "def_title">
+				行や列に見出しを付ける	
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >&lt;th&gt;</font>&#8764;<font id = "orange_b">&lt;&sol;th&gt;</font><br>	
+			</h2>
+
+			<p>
+				行や列の見出しを定義する。<br>
+				見出しに指定されたテキストは通常は太字でセンタリングされる。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;th&gt;</font>名称<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>色<font id = "pink_b">&lt;/th&gt;&lt;th&gt;</font>種類<font id = "pink_b">&lt;/th&gt;</font>&lt;/tr&gt;<br>
+					&#8195;&#8195;&lt;&sol;thead&gt;<br>
+					&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;/td&gt;&lt;td&gt;オレンジ色の&lt;/td&gt;&lt;td&gt;果物&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td class = "border"></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<h2 id = "def_title">
+				キャプションをつける
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >&lt;caption&gt;</font>&#8764;<font id = "orange_b">&lt;&sol;caption&gt;</font><br>	
+			</h2>
+
+			<p>
+				キャプションを定義する。<br>
+				&lt;table&gt;タグの直後に1つだけ配置可能。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&#8195;&#8195;<font id = "pink_b">&lt;caption&gt;</font>仕分けリスト<font id = "pink_b">&lt;&sol;caption&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;/th&gt;&lt;th&gt;種類&lt;/th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;/td&gt;&lt;td&gt;オレンジ色の&lt;/td&gt;&lt;td&gt;果物&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<caption>仕分けリスト</caption>
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td class = "border"></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<h2 id = "def_title">
+				キャプションの位置を指定する	
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >caption&minus;side</font>&colon;&#160;&#9733;<br>
+			</h2>
+
+			<p>
+				キャプションを定義する。<br>
+				&lt;table&gt;タグの直後に1つだけ配置可能。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&#8195;&#8195;<font id = "pink_b">&lt;caption&gt;</font>仕分けリスト<font id = "pink_b">&lt;&sol;caption&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;/th&gt;&lt;th&gt;種類&lt;/th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;/td&gt;&lt;td&gt;オレンジ色の&lt;/td&gt;&lt;td&gt;果物&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<caption>仕分けリスト</caption>
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td class = "border"></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
 	</body>
 </html>

@@ -289,10 +289,161 @@
 				<div id = "test">
 					&#91;HTML&#93;<br>
 					&lt;table&gt;<br>
-					&#8195;&#8195;<font id = "pink_b">&lt;caption&gt;</font>仕分けリスト<font id = "pink_b">&lt;&sol;caption&gt;</font><br>
+					&#8195;&#8195;<font id = "pink_b">&lt;caption&nbsp;class&nbsp;&equals;&nbsp;&quot;sample1&Prime;&gt;</font>仕分けリスト1<font id = "pink_b">&lt;&sol;caption&gt;</font><br>
 					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
 					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;/th&gt;&lt;th&gt;種類&lt;/th&gt;&lt;/tr&gt;<br>
 					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;/td&gt;&lt;td&gt;オレンジ色の&lt;/td&gt;&lt;td&gt;果物&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br>
+					&#8195;&#8195;<font id = "pink_b">&lt;caption&nbsp;class&nbsp;&equals;&nbsp;&quot;sample2&Prime;&gt;</font>仕分けリスト2<font id = "pink_b">&lt;&sol;caption&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;/th&gt;&lt;th&gt;種類&lt;/th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;/td&gt;&lt;td&gt;オレンジ色の&lt;/td&gt;&lt;td&gt;果物&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br>
+					<br>
+					&#91;CSS&#93;<br>
+					caption&period;sample1&nbsp;&lbrace;<br>
+					&emsp;<font id = "pink_b">caption-side</font>&colon;top&semi;<br>
+					&rbrace;<br>
+					caption&period;sample2&nbsp;&lbrace;<br>
+					&emsp;<font id = "pink_b">caption-side</font>&colon;bottom&semi;<br>
+					&brace;
+
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<caption class = "sample4-1">仕分けリスト</caption>
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td class = "border"></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table><br>
+
+					<table class = "sample2">
+						<caption class = "sample4-2">仕分けリスト</caption>
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td class = "border"></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法
+			</h3>
+
+			<table>
+				<tr><td>top</td><td>表の上にキャプションを配置</td></tr>
+				<tr><td>bottom</td><td>表の下にキャプションを配置</td></tr>
+				<tr><td>right</td><td>表の右にキャプションを配置</td></tr>
+				<tr><td>left</td><td>表の左にキャプションを配置</td></tr>
+			</table>
+
+			<h2 id = "def_title">
+				行をグループ化する	
+			</h2>
+
+			<h2 id = "def_com">
+				<table>
+					<tr><td><font id = "orange_b" >&lt;thead&gt;</font>&#8764;<font id = "orange_b">&lt;&sol;thead&gt;</font></td><td>&emsp;</td><td>テーブルのヘッダ部分</td></tr>
+					<tr><td><font id = "orange_b" >&lt;tfoot&gt;</font>&#8764;<font id = "orange_b">&lt;&sol;tfoot&gt;</font></td><td>&emsp;</td><td>テーブルのフッダ部分</td></tr>
+					<tr><td><font id = "orange_b" >&lt;tbody&gt;</font>&#8764;<font id = "orange_b">&lt;&sol;tbody&gt;</font></td><td>&emsp;</td><td>テーブルの本体部分</td></tr>
+				</table>
+			</h2>
+
+			<p>
+				表の横方向の並び&lpar;行&rpar;を、ヘッダ、フッタ、本体の3つの構造にグループ化する。。<br>
+				本体&lpar;&lt;tbody&gt;&sim;&lt;&sol;tbody&gt;&rpar;は必要に応じて、複数のグループに分けることも可能。<br>
+				使用する場合、必ず&lt;thead&gt;&lt;tfoot&gt;&lt;tbody&gt;の順番で記述し、ブラウザにヘッダとフッタを認識させること。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;thead&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;/th&gt;&lt;th&gt;種類&lt;/th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;&sol;thead&gt;</font><br>	
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;tfoot&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&nbsp;colspan&nbsp;&equals;&nbsp;&quot;3&Prime;&gt;2020年5月11日&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;&sol;tfoot&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;tbody&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;/td&gt;&lt;td&gt;オレンジ色の&lt;/td&gt;&lt;td&gt;果物&lt;/td&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;&sol;tbody&gt;</font><br>
+					&lt;&sol;table&gt;<br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">	
+						<thead class = "sample5-1">
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tfoot class = "sample5-2">
+							<tr><td colspan = "3">2020年5月11日</td></tr>
+						</tfoot>
+						<tbody class = "sample5-3">
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td class = "border"></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<h2 id = "def_title">
+				列をグループ化する	
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >&lt;colgroup&nbsp;&starf;&gt;</font>&sim;<font id = "orange_b">&lt;&sol;colgroup&gt;</font>
+			</h2>
+
+			<p>
+				表の縦列をグループ化する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;colgroup&nbsp;span&nbsp;&equals;&nbsp;</font>&quot;1&Prime;<font id = "pink_b">&gt;&lt;&sol;colgroup&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;colgroup&nbsp;span&nbsp;&equals;&nbsp;</font>&quot;2&Prime;<font id = "pink_b">&gt;&lt;&sol;colgroup&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;/th&gt;&lt;th&gt;種類&lt;/th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>	
 					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
 					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;/td&gt;&lt;td&gt;緑色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
 					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;/td&gt;&lt;td&gt;赤色の&lt;/td&gt;&lt;td&gt;野菜&lt;/td&gt;&lt;/tr&gt;<br>
@@ -309,7 +460,8 @@
 			<div id = "nav_frame">
 				<div id = "test">
 					<table class = "sample2">
-						<caption>仕分けリスト</caption>
+						<colgroup class = "sample6-1" span = "1"></colgroup>
+						<colgroup class = "sample6-2" span = "2"></colgroup>
 						<thead>
 							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
 						</thead>
@@ -322,5 +474,20 @@
 				</div>
 			</div>
 
+			<h3 id = "aqua_b">
+				span属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				グループ化する列数を指定する&lpar;1以上の整数&rpar;。なお、省略時は&quot;1&Prime;が適用される。ただし、&lt;colgroup&gt;&sim;&lt;&sol;colgroup&gt;タグ内に&lt;col&gt;タグが含まれている場合、無視される。
+			</p>
+
+			<h3 id = "aqua_b">
+				width属性&lpar;&starf;&rpar;
+			</h3>
+
+			<p>
+				グループ内の横幅を指定する&lpar;ピクセル数、パーセント、比率&rpar;、あるいは列の内容を表示するための必要最小限を表す&quot;0&Prime;で指定する。
+			</p>
 	</body>
 </html>

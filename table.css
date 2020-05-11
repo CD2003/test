@@ -100,3 +100,37 @@ th.sample3-1
 	border:2px gray solid;
 }
 
+caption.sample4-1
+{
+	caption-side:top;
+}
+
+caption.sample4-2
+{
+	caption-side:bottom;
+}
+
+thead.sample5-1
+{
+	background-color:#FF00FF;
+}
+
+tfoot.sample5-2
+{
+	background-color:#00FF00;
+}
+
+tbody.sample5-3
+{
+	background-color:#00FFFF;
+}
+
+colgroup.sample6-1
+{
+	background-color:orange;
+}
+
+colgroup.sample6-2
+{
+	background-color:yellow;
+}

@@ -134,3 +134,23 @@ colgroup.sample6-2
 {
 	background-color:yellow;
 }
+
+col.sample7-1
+{
+	background-color:green;
+}
+
+col.sample7-2
+{
+	background-color:aqua;
+}
+
+td.sample8-1
+{
+	background-color:aqua;
+}
+
+table.sample9-1
+{
+	float:right;
+}

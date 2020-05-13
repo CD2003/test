@@ -154,3 +154,44 @@ table.sample9-1
 {
 	float:right;
 }
+
+p.sample10-1
+{
+	clear:right;
+}
+
+table.sample11-1
+{
+	width:50%;
+}
+
+table.sample11-2
+{
+	width:350px;
+	height:200px;
+}
+
+th.sample12-1
+{
+	width:200px;
+}
+
+th.sample12-2
+{
+	width:300px;
+}
+
+th.sample12-3
+{
+	width:250px;
+}
+
+th.sample12-4
+{
+	width:100px;
+}
+
+td.sample12-5
+{
+	height:2em;
+}

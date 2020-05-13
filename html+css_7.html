@@ -727,7 +727,268 @@
 
 			<table>
 				<tr><td>left</td><td>&emsp;</td><td>対象となるボックスを左側に配置、後に続く内容を右側に回り込ませる</td></tr>
-				<tr><td>right</td><td>&emsp;</td><td>対象となるボックスを右側に配置、後に続く内容を左側に回り込ませる
+				<tr><td>right</td><td>&emsp;</td><td>対象となるボックスを右側に配置、後に続く内容を左側に回り込ませる</td></tr>
+			</table>
+
+			<h2 id = "def_title">
+				表に対する回り込みを解除する	
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >clear</font>&nbsp;&colon;&nbsp;&starf;<br>
+			</h2>
+
+			<p>
+				表に対する回り込みを解除する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&nbsp;class&nbsp;&equals;&nbsp;&quot;sample9-1&Prime;&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;&sol;th&gt;&lt;th&gt;味&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>	
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;苦い&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&nbsp;colspan&nbsp;&equals;&nbsp;&quot;2&Prime;&gt;編集中&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;甘酸っぱい&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br>
+					<br>
+					&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;右に仕分けリストの表を示す。<br>	
+					&lt;&sol;p&gt;<br>
+					<br>
+					<font id = "pink_b">&lt;p&nbsp;class&nbsp;&equals;&nbsp;&quot;sample10&minus;1&Prime;&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;floatプロパティで指定した回り込みは、clearプロパティで解除できる。<br>
+					&lt;&sol;p&gt;<br>
+					<br>
+					&lbrack;CSS&rbrack;<br>
+					table.sample9&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;float&colon;right&semi;<br>
+					&rbrace;<br>
+					p.sample10&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">clear</font>&colon;right&semi;<br>
+					&rbrace;
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2 sample9-1">
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">味</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">苦い</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1" colspan = "2">編集中</td></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">甘酸っぱい</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+
+					<p>
+						右に仕分けリストの表を示す。
+					</p>
+
+					<p class = "sample10-1">
+						floatプロパティで指定した回り込みは、clearプロパティで解除できる。
+					</p>
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>left</td><td>&emsp;</td><td>左側の回り込み要素&lpar;float&colon;left&rpar;を解除</td></tr>
+				<tr><td>right</td><td>&emsp;</td><td>右側の回り込み要素&lpar;float&colon;right&rpar;を解除</td></tr>
+				<tr><td>both</td><td>&emsp;</td><td>左右すべての回り込み要素を解除</td></tr>	
+			</table>
+
+			<h2 id = "def_title">
+				表のサイズを指定する
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >width</font>&nbsp;&colon;&nbsp;&starf;<br>
+				<font id = "orange_b" >height</font>&nbsp;&colon;&nbsp;&starf;<br>
+			</h2>
+
+			<p>
+				表の幅と高さを指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					<font id = "pink_b">&lt;table&nbsp;class&nbsp;&equals;&nbsp;&quot;sample11-1&Prime;&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;&sol;th&gt;&lt;th&gt;味&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>	
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;苦い&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&nbsp;colspan&nbsp;&equals;&nbsp;&quot;2&Prime;&gt;編集中&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;甘酸っぱい&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+
+					<font id = "pink_b">&lt;table&nbsp;class&nbsp;&equals;&nbsp;&quot;sample12-1&Prime;&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;&sol;th&gt;&lt;th&gt;味&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;/tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>	
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;苦い&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&nbsp;colspan&nbsp;&equals;&nbsp;&quot;2&Prime;&gt;編集中&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;甘酸っぱい&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+						
+					&lbrack;CSS&rbrack;<br>
+					table.sample11&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">width</font>&colon;50&percnt;&semi;<br>
+					&rbrace;<br><br>
+
+					table.sample11&minus;2<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">width</font>&colon;350px&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">height</font>&colon;200px&semi;<br>
+					&rbrace;
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2 sample11-1">
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">味</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">苦い</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1" colspan = "2">編集中</td></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">甘酸っぱい</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+					<br>
+
+					<table class = "sample2 sample11-2">
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">味</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">苦い</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1" colspan = "2">編集中</td></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">甘酸っぱい</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>	
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>実数値&plus;単位</td><td>&emsp;</td><td>数値に単位をつけて、幅または高さを指定する。</td></tr>
+				<tr><td>パーセント値&plus;&percent;</td><td>&emsp;</td><td>包含ブロックの幅または高さに対する割合で決定する。</td></tr>
+				<tr><td>auto</td><td>&emsp;</td><td>自動で調整</td></tr>	
+			</table>
+
+			<h2 id = "def_title">
+				セルのサイズを指定する	
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >width</font>&nbsp;&colon;&nbsp;&starf;<br>
+				<font id = "orange_b" >height</font>&nbsp;&colon;&nbsp;&starf;<br>
+			</h2>
+
+			<p>
+				セルの幅と高さを指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&nbsp;class&nbsp;&equals;&nbsp;&quot;sample11-1&Prime;&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;thead&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;th&nbsp;class&nbsp;&equals;&nbsp;&quot;sample12&minus;1&Prime;&gt;</font>名称&lt;&sol;th&gt;<font id = "pink_b">&lt;th&nbsp;class&nbsp;&equals;&nbsp;&quot;sample12&minus;2&Prime;&gt;</font>色&lt;&sol;th&gt;<font id = "pink_b">&lt;th&nbsp;class&nbsp;&equals;&nbsp;&quot;sample12&minus;3&Prime;&gt;</font>味&lt;&sol;th&gt;<font id = "pink_b">&lt;th&nbsp;class&nbsp;&equals;&nbsp;&quot;sample12&minus;4&Prime;&gt;</font>種類&lt;&sol;th&gt;&lt;/tr&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;thead&gt;<br>	
+					&#8195;&#8195;&#8195;&#8195;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>ピーマン<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>緑色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>苦い<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>野菜<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>トマト<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>赤色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td</font>&nbsp;colspan&nbsp;&equals;&nbsp;&quot;2&Prime;<font id = "pink_b">&gt;</font>編集中<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>オレンジ色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>甘酸っぱい<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>果物<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br><br>
+						
+					&lbrack;CSS&rbrack;<br>
+					th.sample12&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">width</font>&colon;200px&semi;<br>
+					&rbrace;<br><br>
+
+					th.sample12&minus;2<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">width</font>&colon;300px&semi;<br>
+					&rbrace;<br><br>
+
+					th.sample12&minus;3<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">width</font>&colon;250px&semi;<br>
+					&rbrace;<br><br>
+
+					th.sample12&minus;4<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">width</font>&colon;100px&semi;<br>
+					&rbrace;<br><br>
+
+					td<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">height</font>&colon;2em&semi;<br>
+					&rbrace;
+
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<thead>
+							<tr><th class = "sample3-1 sample12-1">名称</th><th class = "sample3-1 sample12-2">色</th><th class = "sample3-1 sample12-3">味</th><th class = "sample3-1 sample12-4">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1 sample12-5">ピーマン</td><td class = "sample2-1 sample12-5">緑色の</td><td class = "sample2-1 sample12-5">苦い</td><td class = "sample2-1 sample12-5">野菜</td></tr>
+							<tr><td class = "sample2-1 sample12-5">トマト</td><td class = "sample2-1 sample12-5">赤色の</td><td class = "sample2-1 sample12-5" colspan = "2">編集中</td></tr>
+							<tr><td class = "sample2-1 sample12-5">蜜柑</td><td class = "sample2-1 sample12-5">オレンジ色の</td><td class = "sample2-1 sample12-5">甘酸っぱい</td><td class = "sample2-1 sample12-5">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>実数値&plus;単位</td><td>&emsp;</td><td>数値に単位をつけて、幅または高さを指定する。</td></tr>
+				<tr><td>パーセント値&plus;&percent;</td><td>&emsp;</td><td>包含ブロックの幅または高さに対する割合で決定する。</td></tr>
+				<tr><td>auto</td><td>&emsp;</td><td>自動で調整</td></tr>	
 			</table>
 	</body>
 </html>

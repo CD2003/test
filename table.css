@@ -195,3 +195,85 @@ td.sample12-5
 {
 	height:2em;
 }
+
+td.sample13-1
+{
+	width:100px;
+	height:50px;
+	text-align:left;
+	vertical-align:top;
+}
+
+td.sample13-2
+{
+	width:100px;
+	height:50px;
+	text-align:center;
+	vertical-align:top;
+}
+
+td.sample13-3
+{
+	width:100px;
+	height:50px;
+	text-align:right;
+	vertical-align:top;
+}
+
+td.sample13-4
+{
+	width:100px;
+	height:50px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+td.sample13-5
+{
+	width:100px;
+	height:50px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+td.sample13-6
+{
+	width:100px;
+	height:50px;
+	text-align:right;
+	vertical-align:middle;
+}
+
+td.sample13-7
+{
+	width:100px;
+	height:50px;
+	text-align:left;
+	vertical-align:bottom;
+}
+
+td.sample13-8
+{
+	width:100px;
+	height:50px;
+	text-align:center;
+	vertical-align:bottom;
+}
+
+td.sample13-9
+{
+	width:100px;
+	height:50px;
+	text-align:right;
+	vertical-align:bottom;
+}
+
+table.sample14-1
+{
+	border-spacing:5px;
+}
+
+table.sample14-2
+{
+	border-spacing:0.5em 1em;
+}

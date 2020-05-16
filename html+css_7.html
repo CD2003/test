@@ -1196,5 +1196,175 @@
 				</table>
 			</table>
 
+			<h2 id = "def_title">
+				セルの余白を指定する
+			</h2>
+
+			<h2 id = "def_com">
+				<table>
+					<tr><td><font id = "orange_b" >padding&minus;top</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;上のパディング</td></tr>
+					<tr><td><font id = "orange_b" >padding&minus;right</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;右のパディング</td></tr>
+					<tr><td><font id = "orange_b" >padding&minus;left</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;左のパディング</td></tr>
+					<tr><td><font id = "orange_b" >padding&minus;bottom</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;下のパディング</td></tr>	
+					<tr><td><font id = "orange_b" >padding</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;パディング一括指定</td></tr>
+				</table>
+			</h2>
+
+			<p>
+				セルの罫線と内容との間の間隔を指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<font id = "pink_b">&lt;th&gt;</font>名称<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>色<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>種類<font id = "pink_b">&lt;&sol;th&gt;</font>&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>ピーマン<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>緑色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>野菜<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>トマト<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>赤色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>野菜<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>オレンジ色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>果物<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br><br>
+				
+					&lbrack;CSS&rbrack;<br>
+					th, td<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">padding</font>&colon;20px&semi;<br>
+					&rbrace;<br><br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">	
+						<thead>
+							<tr><th class = "sample3-1 sample15-1">名称</th><th class = "sample3-1 sample15-1">色</th><th class = "sample3-1 sample15-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1 sample15-1">ピーマン</td><td class = "sample2-1 sample15-1">緑色の</td><td class = "sample2-1 sample15-1">野菜</td></tr>
+							<tr><td class = "sample2-1 sample15-1">トマト</td><td class = "sample2-1 sample15-1">赤色の</td><td class = "sample2-1 sample15-1">野菜</td></tr>
+							<tr><td class = "sample2-1 sample15-1">蜜柑</td><td class = "sample2-1 sample15-1">オレンジ色の</td><td class = "sample2-1 sample15-1">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>色</td><td>&emsp;</td><td>RGB値、色名で指定</td></tr>	
+				<tr><td>transparent</td><td>&emsp;</td><td>透明を指定、ボーダーの幅は保持</td></tr>
+				
+			</table>
+
+			<h3 id = "aqua_b">
+				一括&lpar;padding&colon;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>&starf;</td><td>&emsp;上下左右同じ</td></tr>	
+				<tr><td>&starf;&nbsp;&starf;</td><td>&emsp;上下、左右同の順で指定</td></tr>
+				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;</td><td>&emsp;上、左右、上下の順で指定</td></tr>
+				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;</td><td>&emsp;上、右、下、左の順で指定</td></tr>
+			</table>
+
+			
+			<h2 id = "def_title">
+				枠線の色を指定する
+			</h2>
+
+			<h2 id = "def_com">
+				<table>
+					<tr><td><font id = "orange_b" >border&minus;top&minus;color</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;上の枠線の色</td></tr>
+					<tr><td><font id = "orange_b" >border&minus;right&minus;color</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;右の枠線の色</td></tr>
+					<tr><td><font id = "orange_b" >border&minus;left&minus;color</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;左の枠線の色</td></tr>
+					<tr><td><font id = "orange_b" >border&minus;bottom&minus;color</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;下の枠線の色</td></tr>	
+					<tr><td><font id = "orange_b" >border&minus;color</font>&nbsp;&colon;&nbsp;&starf;</td><td>&emsp;枠線の色の一括指定</td></tr>
+				</table>
+			</h2>
+
+			<p>
+				表の枠線の色を指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					<font id = "pink_b">&lt;table&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<font id = "pink_b">&lt;th&gt;</font>名称<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>色<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>種類<font id = "pink_b">&lt;&sol;th&gt;</font>&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>ピーマン<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>緑色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>野菜<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>トマト<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>赤色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>野菜<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;<font id = "pink_b">&lt;td&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>オレンジ色の<font id = "pink_b">&lt;&sol;td&gt;&lt;td&gt;</font>果物<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+				
+					&lbrack;CSS&rbrack;<br>
+
+					table<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;color</font>&colon;&sharp;cc0000&semi;<br>
+					&rbrace;<br>
+					th, td<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;top&minus;color</font>&colon;&sharp;ffcc00&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;right&minus;color</font>&colon;&sharp;669900&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;left&minus;color</font>&colon;&sharp;ccff00&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;bottom&minus;color</font>&colon;&sharp;996600&semi;<br>
+					&rbrace;<br><br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2 sample16-1">	
+						<thead>
+							<tr><th class = "sample3-1 sample16-2">名称</th><th class = "sample3-1 sample16-2">色</th><th class = "sample3-1 sample16-2">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1 sample16-2">ピーマン</td><td class = "sample2-1 sample16-2">緑色の</td><td class = "sample2-1 sample16-2">野菜</td></tr>
+							<tr><td class = "sample2-1 sample16-2">トマト</td><td class = "sample2-1 sample16-2">赤色の</td><td class = "sample2-1 sample16-2">野菜</td></tr>
+							<tr><td class = "sample2-1 sample16-2">蜜柑</td><td class = "sample2-1 sample16-2">オレンジ色の</td><td class = "sample2-1 sample16-2">果物</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>色</td><td>&emsp;</td><td>RGB値、色名で指定</td></tr>	
+				<tr><td>transparent</td><td>&emsp;</td><td>透明を指定、ボーダーの幅は保持</td></tr>
+				
+			</table>
+
+			<h3 id = "aqua_b">
+				一括&lpar;border&minus;color&colon;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>&starf;</td><td>&emsp;上下左右同じ</td></tr>	
+				<tr><td>&starf;&nbsp;&starf;</td><td>&emsp;上下、左右同の順で指定</td></tr>
+				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;</td><td>&emsp;上、左右、上下の順で指定</td></tr>
+				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;</td><td>&emsp;上、右、下、左の順で指定</td></tr>
+			</table>
+
+
 	</body>
 </html>

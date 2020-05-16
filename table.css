@@ -277,3 +277,34 @@ table.sample14-2
 {
 	border-spacing:0.5em 1em;
 }
+
+th.sample15-1
+{
+	padding:20px;
+}
+
+td.sample15-1
+{
+	padding:20px;
+}
+
+table.sample16-1
+{
+	border-color:#cc0000;
+}
+
+th.sample16-2
+{
+	border-top-color:#ffcc00;
+	border-right-color:#669900;
+	border-left-color:#ccff00;
+	border-bottom-color:#996600;
+}
+
+td.sample16-2
+{
+	border-top-color:#ffcc00;
+	border-right-color:#669900;
+	border-left-color:#ccff00;
+	border-bottom-color:#996600;
+}

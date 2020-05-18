@@ -1365,6 +1365,262 @@
 				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;</td><td>&emsp;上、右、下、左の順で指定</td></tr>
 			</table>
 
+			<h2 id = "def_title">
+				外枠の表示方法を指定する
+			</h2>
 
+			<h2 id = "def_com">
+				<font id = "orange_b" >border&minus;top</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>
+				<font id = "orange_b" >border&minus;right</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>
+				<font id = "orange_b" >border&minus;left</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>
+				<font id = "orange_b" >border&minus;bottom</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>	
+			</h2>
+
+			<p>
+				枠線の種類を指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					<font id = "pink_b">&lt;table&nbsp;class&nbsp;&equals;&quot;sample1&Prime;&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+			
+					<font id = "pink_b">&lt;table&nbsp;class&nbsp;&equals;&quot;sample2&Prime;&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+
+					&lbrack;CSS&rbrack;<br>
+
+					table<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;color</font>&colon;&sharp;cc0000&semi;<br>
+					&rbrace;<br><br>
+					table.sample1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;top</font>&colon;4px&nbsp;solid&nbsp;gray&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;bottom</font>&colon;4px&nbsp;solid&nbsp;gray&semi;<br>
+					&rbrace;<br><br>
+					
+					table.sample2<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;right</font>&colon;4px&nbsp;solid&nbsp;gray&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;left</font>&colon;4px&nbsp;solid&nbsp;gray&semi;<br>
+					&rbrace;<br><br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample17-1">
+						<thead>
+							<tr><th class = "sample3-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table><br>
+
+					<table class = "sample17-2">	
+						<thead>
+							<tr><th class = "sample2-1">名称</th><th class = "sample3-1">色</th><th class = "sample3-1">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample2-1">ピーマン</td><td class = "sample2-1">緑色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">トマト</td><td class = "sample2-1">赤色の</td><td class = "sample2-1">野菜</td></tr>
+							<tr><td class = "sample2-1">蜜柑</td><td class = "sample2-1">オレンジ色の</td><td class = "sample2-1">果物</td></tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				枠線の幅&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>thin</td><td>&emsp;</td><td>細い線</td></tr>
+				<tr><td>medium</td><td>&emsp;</td><td>中くらいの線</td></tr>
+				<tr><td>thick</td><td>&emsp;</td><td>太い線</td></tr>
+				<tr><td>実数値&plus;単位</td><td>&emsp;</td><td>数値で指定</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の種類&lpar;&diams;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>dotted</td><td>&emsp;点線</td></tr>	
+				<tr><td>dashed</td><td>&emsp;破線</td></tr>
+				<tr><td>solid</td><td>&emsp;実線</td></tr>
+				<tr><td>double</td><td>&emsp;二重線</td></tr>
+				<tr><td>groove</td><td>&emsp;凹んだように見える線</td></tr>
+				<tr><td>ridge</td><td>&emsp;浮き上がったように見える線</td></tr>
+				<tr><td>inset</td><td>&emsp;内側が凹んだように見える線</td></tr>
+				<tr><td>outset</td><td>&emsp;外側が凹んだように見える線</td></tr>
+				<tr><td>none</td><td>&emsp;非表示</td></tr>
+				<tr><td>hiden</td><td>&emsp;非表示</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の色&lpar;&#x25B2;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>色</td><td>&emsp;RGB値あるいはキーワード&lpar;色&rpar;で指定</td></tr>	
+				<tr><td>transparent</td><td>&emsp;透明</td></tr>
+			</table>
+			
+			<h2 id = "def_title">
+				内側罫線の表示方法を指定する
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >border&minus;top</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>
+				<font id = "orange_b" >border&minus;right</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>
+				<font id = "orange_b" >border&minus;left</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>
+				<font id = "orange_b" >border&minus;bottom</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&#x25B2;<br>	
+			</h2>
+
+			<p>
+				枠線の種類を指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;thead&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;thead&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;tfoot&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;&lt;td&nbsp;colspan&nbsp;&equals;&nbsp;&quot;3&Prime;&gt;2020年5月18日&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>				
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;tfoot&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;tbody&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;&sol;tbody&gt;</font><br>
+					&lt;&sol;table&gt;<br><br>
+			
+					&lt;table&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;colgroup&nbsp;&equals;&nbsp;&quot;1&Prime;&gt;&lt;&sol;colgroup&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;colgroup&nbsp;&equals;&nbsp;&quot;2&Prime;&gt;&lt;&sol;colgroup&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;&lt;td&gt;果物&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&lt;&sol;table&gt;<br><br>
+
+					&lbrack;CSS&rbrack;<br>
+
+					table<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;border-collapse&colon;collapse&semi;<br>
+					&rbrace;<br><br>
+
+					thead,&nbsp;tbody,&nbsp;tfoot<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;top</font>&colon;1px&nbsp;solid&nbsp;gray&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;bottom</font>&colon;1px&nbsp;solid&nbsp;gray&semi;<br>
+					&rbrace;<br><br>
+					
+					colgroup<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;right</font>&colon;1px&nbsp;solid&nbsp;gray&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border&minus;left</font>&colon;1px&nbsp;solid&nbsp;gray&semi;<br>
+					&rbrace;<br><br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample18-0">
+						<thead class = "sample18-1">
+							<tr><th>名称</th><th>色</th><th>種類</th></tr>
+						</thead>
+						<tfoot class = "sample18-2">
+							<tr><td colspan = "3">2020年5月18日</td></tr>
+						</tfoot>
+						<tbody class = "sample18-3">
+							<tr><td>ピーマン</td><td>緑色の</td><td>野菜</td></tr>
+							<tr><td>トマト</td><td>赤色の</td><td>野菜</td></tr>
+							<tr><td>蜜柑</td><td>オレンジ色の</td><td>果物</td></tr>
+						</tbody>
+					</table><br>
+
+					<table class = "sample18-0">	
+						<colgroup span = "1" id = "name" class = "sample18-4"></colgroup>
+						<colgroup span = "2" id = "detail" class = "sample18-4"></colgroup>
+							<tr><td>ピーマン</td><td>緑色の</td><td>野菜</td></tr>
+							<tr><td>トマト</td><td>赤色の</td><td>野菜</td></tr>
+							<tr><td>蜜柑</td><td>オレンジ色の</td><td>果物</td></tr>	
+					</table>
+
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				枠線の幅&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>thin</td><td>&emsp;</td><td>細い線</td></tr>
+				<tr><td>medium</td><td>&emsp;</td><td>中くらいの線</td></tr>
+				<tr><td>thick</td><td>&emsp;</td><td>太い線</td></tr>
+				<tr><td>実数値&plus;単位</td><td>&emsp;</td><td>数値で指定</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の種類&lpar;&diams;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>dotted</td><td>&emsp;点線</td></tr>	
+				<tr><td>dashed</td><td>&emsp;破線</td></tr>
+				<tr><td>solid</td><td>&emsp;実線</td></tr>
+				<tr><td>double</td><td>&emsp;二重線</td></tr>
+				<tr><td>groove</td><td>&emsp;凹んだように見える線</td></tr>
+				<tr><td>ridge</td><td>&emsp;浮き上がったように見える線</td></tr>
+				<tr><td>inset</td><td>&emsp;内側が凹んだように見える線</td></tr>
+				<tr><td>outset</td><td>&emsp;外側が凹んだように見える線</td></tr>
+				<tr><td>none</td><td>&emsp;非表示</td></tr>
+				<tr><td>hiden</td><td>&emsp;非表示</td></tr>
+			</table>
+
+			<h3 id = "aqua_b">
+				枠線の色&lpar;&#x25B2;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>色</td><td>&emsp;RGB値あるいはキーワード&lpar;色&rpar;で指定</td></tr>	
+				<tr><td>transparent</td><td>&emsp;透明</td></tr>
+			</table>
 	</body>
 </html>

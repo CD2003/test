@@ -1622,5 +1622,162 @@
 				<tr><td>色</td><td>&emsp;RGB値あるいはキーワード&lpar;色&rpar;で指定</td></tr>	
 				<tr><td>transparent</td><td>&emsp;透明</td></tr>
 			</table>
+
+			<h2 id = "def_title">
+				表やセルの背景色を指定する
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >background&minus;color</font>&nbsp;&colon;&nbsp;&starf;<br>
+			</h2>
+
+			<p>
+				表やセルの背景色をを指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					<font id = "pink_b">&lt;table&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<font id = "pink_b">&lt;th&gt;</font>名称<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>色<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>種類<font id = "pink_b">&lt;&sol;th&gt;</font>&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;tr&nbsp;class&nbsp;&equals;&nbsp;&quot;sample19&minus;1&Prime;&gt;</font>&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;<font id = "pink_b">&lt;&sol;tr&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;<font id = "pink_b">&lt;td&nbsp;class&nbsp;&equals;&nbsp;&quot;sample19&minus;2&Prime;&gt;</font>果物<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+
+					&lbrack;CSS&rbrack;<br>
+
+					table<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;color</font>&colon;yellow&semi;<br>
+					&rbrace;<br><br>
+
+					th<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;color</font>&colon;pink&semi;<br>
+					&rbrace;<br><br>
+					
+					tr.sample19&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;color</font>&colon;#99ff99&semi;<br>
+					&rbrace;<br><br>
+					
+					td.sample19&minus;2<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;color</font>&colon;blue&semi;<br>
+					&rbrace;<br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2 sample19-1">
+						<thead>
+							<tr><th class = "sample19-2">名称</th><th class = "sample19-2">色</th><th class = "sample19-2">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>ピーマン</td><td>緑色の</td><td>野菜</td></tr>
+							<tr class = "sample19-3"><td>トマト</td><td>赤色の</td><td>野菜</td></tr>
+							<tr><td>蜜柑</td><td>オレンジ色の</td><td class = "sample19-2">果物</td></tr>
+						</tbody>
+					</table><br>
+
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				枠線の幅&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>色</td><td>&emsp;</td><td>RGB値もしくはキーワード&lpar;色名&rpar;で指定</td></tr>
+				<tr><td>transparent</td><td>&emsp;</td><td>透明を指定</td></tr>
+			</table>
+
+			<h2 id = "def_title">
+				表やセルの背景画像を指定する
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >background&minus;image</font>&nbsp;&colon;&nbsp;&starf;<br>
+			</h2>
+
+			<p>
+				表やセルの背景色をを指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					<font id = "pink_b">&lt;table&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<font id = "pink_b">&lt;th&gt;</font>名称<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>色<font id = "pink_b">&lt;&sol;th&gt;&lt;th&gt;</font>種類<font id = "pink_b">&lt;&sol;th&gt;</font>&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;<font id = "pink_b">&lt;tr&nbsp;class&nbsp;&equals;&nbsp;&quot;sample19&minus;1&Prime;&gt;</font>&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;<font id = "pink_b">&lt;&sol;tr&gt;</font><br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;<font id = "pink_b">&lt;td&nbsp;class&nbsp;&equals;&nbsp;&quot;sample19&minus;2&Prime;&gt;</font>果物<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					<font id = "pink_b">&lt;&sol;table&gt;</font><br><br>
+
+					&lbrack;CSS&rbrack;<br>
+
+					table<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;image</font>&colon;url&lpar;&quot;background_1.png&Prime;&rpar;&semi;<br>
+					&rbrace;<br><br>
+
+					th<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;image</font>&colon;url&lpar;&quot;background_2.png&Prime;&rpar;&semi;<br>
+					&rbrace;<br><br>
+					
+					tr.sample20&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;image</font>&colon;url&lpar;&quot;background_3.png&Prime;&rpar;&semi;<br>
+					&rbrace;<br><br>
+					
+					td.sample20&minus;2<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">background&minus;image</font>&colon;url&lpar;&quot;background_4.png&Prime;&rpar;&semi;<br>
+					&rbrace;<br>
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2 sample20-1">
+						<thead>
+							<tr><th class = "sample20-2">名称</th><th class = "sample20-2">色</th><th class = "sample20-2">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>ピーマン</td><td>緑色の</td><td>野菜</td></tr>
+							<tr class = "sample20-3"><td>トマト</td><td>赤色の</td><td>野菜</td></tr>
+							<tr><td>蜜柑</td><td>オレンジ色の</td><td class = "sample20-4">果物</td></tr>
+						</tbody>
+					</table><br>
+
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>URL</td><td>&emsp;</td><td>画像のURLを指定</td></tr>
+			</table>
 	</body>
 </html>

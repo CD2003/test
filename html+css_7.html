@@ -1779,5 +1779,72 @@
 			<table>
 				<tr><td>URL</td><td>&emsp;</td><td>画像のURLを指定</td></tr>
 			</table>
+
+
+			<h2 id = "def_title">
+				セル内の改行を禁止する	
+			</h2>
+
+			<h2 id = "def_com">
+				<font id = "orange_b" >white&minus;space</font>&nbsp;&colon;&nbsp;nowrap<br>
+			</h2>
+
+			<p>
+				要素中の半角スペース、タブ、改行をどのように処理するかを指定する。
+			</p>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&#91;HTML&#93;<br>
+					&lt;table&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr&gt;&lt;th&gt;名称&lt;&sol;th&gt;&lt;th&gt;色&lt;&sol;th&gt;&lt;th&gt;種類&lt;&sol;th&gt;&lt;&sol;tr&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;thead&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;tbody&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;ピーマン&lt;&sol;td&gt;&lt;td&gt;緑色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;トマト&lt;&sol;td&gt;&lt;td&gt;赤色の&lt;&sol;td&gt;&lt;td&gt;野菜&lt;&sol;td&gt;&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&lt;tr&gt;&lt;td&gt;蜜柑&lt;&sol;td&gt;&lt;td&gt;オレンジ色の&lt;&sol;td&gt;<font id = "pink_b">&lt;td&nbsp;class&nbsp;&equals;&nbsp;&quot;sample21&minus;2&Prime;&gt;</font>果物果物果物果物果物<font id = "pink_b">&lt;&sol;td&gt;</font>&lt;&sol;tr&gt;<br>
+					&#8195;&#8195;&#8195;&#8195;&lt;&sol;tbody&gt;<br>
+					&lt;&sol;table&gt;<br><br>
+
+					&lbrack;CSS&rbrack;<br>
+					
+					td.sample21&minus;1<br>
+					&lbrace;<br>
+					&emsp;&emsp;&emsp;&emsp;border&colon;1px&nbsp;solid&nbsp;gray&semi;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">white&minus;space</font>&colon;nowrap&semi;<br>
+					&rbrace;<br><br>
+	
+				</div>
+			</div>
+			
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<table class = "sample2">
+						<thead>
+							<tr><th class = "sample21-2">名称</th><th class = "sample21-2">色</th><th class = "sample21-2">種類</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class = "sample21-3">ピーマン</td><td class = "sample21-3">緑色の</td><td class = "sample21-3">野菜</td></tr>
+							<tr><td class = "sample21-3">トマト</td><td class = "sample21-3">赤色の</td><td class = "sample21-3">野菜</td></tr>
+							<tr><td class = "sample21-3">蜜柑</td><td class = "sample21-3">オレンジ色の</td><td class = "sample21-1">果物果物果物果物果物</td></tr>
+						</tbody>
+					</table><br>
+
+				</div>
+			</div>
+
+			<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法	
+			</h3>
+
+			<table>
+				<tr><td>URL</td><td>&emsp;</td><td>画像のURLを指定</td></tr>
+			</table>
+
 	</body>
 </html>

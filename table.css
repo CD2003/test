@@ -395,3 +395,24 @@ td.sample20-4
 	border:1px solid gray;
 	background-image:url("background_4.png");
 }
+
+td.sample21-1
+{
+	border:1px solid gray;
+	white-space:nowrap;
+}
+
+th.sample21-2
+{
+	border:1px solid gray;
+}
+
+td.sample21-3
+{
+	border:1px solid gray;
+}
+
+td.sample21-4
+{
+	border:1px solid gray;
+}

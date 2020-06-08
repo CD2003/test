@@ -37,7 +37,6 @@
 			<p>
 				この範囲が入力フォームであることを示す。フォームの送信先、送信方法なども&lt;form&gt;タグの属性で指定する。
 			</p>
-			<br>
 
 			<h3 id = "aqua_b">
 				action属性
@@ -46,7 +45,6 @@
 			<p>
 				入力されたデータを処理するプログラムのURLを指定する。
 			</p>
-			<br>
 
 			<h3 id = "aqua_b">
 				method属性
@@ -60,7 +58,6 @@
 					<tr><td>get</td><td>&emsp;</td><td>action属性で指定したURLのあとに&quot;&quest;&Prime;とフォームのデータを追加して送信する。</td></tr>
 				</table>
 			</p>
-			<br>
 
 			<h3 id = "aqua_b">
 				enctype属性
@@ -73,7 +70,6 @@
 					<tr><td>multipart&sol;form&minus;data</td><td>&emsp;</td><td>ファイルを添付するようなフォーム</td></tr>
 				</table>
 			</p>
-			<br>
 
 			<h3 id = "aqua_b">
 				target属性
@@ -82,7 +78,6 @@
 			<p>
 				データ送信後の結果を表示させるウィンドウ名を指定する。指定したウィンドウが見つからない場合、新しいウィンドウに表示される。
 			</p>
-			<br>
 
 			<div id = "nav_frame">
 				<div id = "test">
@@ -107,4 +102,135 @@
 					</form>
 				</div>
 			</div>
+			<br>
+
+			<h2 id = "def_title">
+				送信ボタンとリセットボタンを作る
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;submit&Prime;&nbsp;<font id = "orange_b">&starf;&gt;</font><br>
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;reset&Prime;&nbsp;<font id = "orange_b">&starf;&gt;</font>
+			</h2>
+
+			<p>
+				ボタンを作成する。<br>
+				&lpar;submit&nbsp;&colon;&nbsp;送信、reset&nbsp;&colon;&nbsp;リセット&rpar;
+			</p>
+
+			<h3 id = "aqua_b">
+				&starf;&nbsp;&colon;&nbsp;value属性	
+			</h3>
+
+			<p>
+				ボタンに表示するテキストを指定する。
+			</p>
+			<br>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;初期状態<br>
+					&lt;&sol;p&gt;<br>
+					&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;submit&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;reset&Prime;<font id = "pink_b">&gt;</font><br>
+					&lt;&sol;p&gt;<br>
+					&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;ボタンに表示するテキストを指定<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;submit&Prime;&nbsp;<font id = "pink_b">value&nbsp;&equals;</font>&quot;送信する&Prime;<font id = "pink_b">&gt;</font><br>
+						&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;reset&Prime;&nbsp;<font id = "pink_b">value&nbsp;&equals;</font>&nbsp;&quot;入力内容を取り消す&Prime;<font id = "pink_b">&gt;</font><br>
+					&lt;&sol;p&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							初期状態
+						</p>
+						<p>
+							<input type = "submit">
+							<input type = "reset">
+						</p>
+						<p>
+							ボタンに表示するテキストを指定
+						</p>
+						<p>
+							<input type = "submit" value = "送信">
+							<input type = "reset" value = "入力内容を取り消す">
+						</p>
+					</form>
+				</div>
+			</div>
+			<br>
+
+			
+			<h2 id = "def_title">
+				汎用ボタンを作る
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;button&Prime;&nbsp;<font id = "orange_b">&starf;&nbsp;onclick&nbsp;&equals;&nbsp;&quot;&diams;&Prime;&gt;</font><br>
+			</h2>
+
+			<p>
+				汎用的に利用できるボタンを作成する。<br>
+				JavaScriptなどともに利用される。
+			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>name</td><td>&emsp;</td><td>ボタンの名前を指定する。</td></tr>
+					<tr><td>value</td><td>&emsp;</td><td>ボタンに表示するテキストを指定する。</td></tr>
+				</table>
+			</p>
+			
+			<h3 id = "aqua_b">
+				属性&lpar;&diams;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>テキスト</td><td>&emsp;</td><td>ボタンをクリックしたときの動作&lpar;関数&rpar;を指定する。</td></tr>
+				</table>
+			</p>
+			<br>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;button&Prime;&nbsp;<font id = "pink_b">value&nbsp;&equals;</font>&nbsp;&quot;戻る&Prime;&nbsp;<font id = "pink_b">onclick&nbsp;&equals;</font>&nbsp;&quot;back&lpar;&rpar;&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;button&Prime;&nbsp;<font id = "pink_b">value&nbsp;&equals;</font>&nbsp;&quot;進む&Prime;&nbsp;<font id = "pink_b">onclick&nbsp;&equals;</font>&nbsp;&quot;forward&lpar;&rpar;&Prime;<font id = "pink_b">&gt;</font><br>
+					&lt;&sol;p&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							<input type = "button" value = "戻る" onclick = "back()">
+							<input type = "button" value = "進む" onclick = "forward()">
+						</p>
+					</form>
+				</div>
+			</div>
+
+	</body>
 </html>

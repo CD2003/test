@@ -306,5 +306,53 @@
 				</div>
 			</div>
 
+			<h2 id = "def_title">
+				画像を使った送信ボタンを作る
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;image&Prime;&nbsp;<font id = "orange_b">&starf;&gt;</font><br>
+			</h2>
+
+			<p>
+				&lt;input&gt;タグのtype属性に&quot;image&Prime;を指定すると、任意の画像を使用した送信ボタンを作成できる。			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>src&nbsp;&equals;&nbsp;&quot;URL&Prime;</td><td>&emsp;</td><td>使用する画像をファイル名&lpar;URL&rpar;を指定する。</td></tr>
+					<tr><td>alt&nbsp;&equals;&nbsp;&quot;テキスト&Prime;</td><td>&emsp;</td><td>テキストを指定する。画像に未対応なブラウザを使用している場合、およびユーザが画像を非表示設定にしている場合などに、<br>本属性で指定したテキストが有効となる。</td></tr>
+					<tr><td>name&nbsp;&equals;&nbsp;&quot;名前&Prime;</td><td>&emsp;</td><td>ボタンの名前を指定する。</td></tr>
+				</table>
+			</p>
+			<br>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;image&Prime;&nbsp;<font id = "pink_b">src&nbsp;&equals;</font>&nbsp;&quot;sbt_sample.png&Prime;&nbsp;<font id = "pink_b">alt&nbsp;&equals;</font>&nbsp;&quot;送信&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;submit&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							<input type = "image" src = "sbt_sample.png" alt = "送信" name = "submit">
+						</p>
+					</form>
+				</div>
+			</div>
+
 	</body>
 </html>

@@ -354,5 +354,145 @@
 				</div>
 			</div>
 
+
+			<h2 id = "def_title">
+				一行の入力フィールドを作成する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;&starf;&Prime;&nbsp;<font id = "orange_b">&diams;&gt;</font><br>
+			</h2>
+
+			<p>
+				&lt;input&gt;タグのtype属性に&quot;text&Prime;&nbsp;or&nbsp;&quot;password&Prime;を指定すると、1行のテキスト入力フィールドを作成できる。<br>
+			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>text</td><td>&emsp;</td><td>1行のテキスト入力フィールドを作成する。</td></tr>
+					<tr><td>password</td><td>&emsp;</td><td>入力文字が非表示となり、&quot;&lowast;&Prime;や&quot;&#x25CF;&Prime;に置き換えられる。</td></tr>
+				</table>
+			</p>
+			<br>
+
+
+			<h3 id = "aqua_b">
+				属性&lpar;&diams;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>name&nbsp;&equals;&nbsp;&quot;名前&Prime;</td><td>&emsp;</td><td>入力フィールドの名前を指定。フォームのデータ送信時、この名前と入力内容がセットで送信される。</td></tr>
+					<tr><td>size&nbsp;&equals;&nbsp;&quot;フィールド幅&Prime;&lpar;半角文字数&rpar;</td><td>&emsp;</td><td>フィールドの横幅を指定する&lpar;文字数&lpar;整数&rpar;&rpar;。</td></tr>
+					<tr><td>value&nbsp;&equals;&nbsp;&quot;デフォルトで表示されるテキスト&Prime;</td><td>&emsp;</td><td>入力フィールドにデフォルトで表示されるテキストを指定する。</td></tr>
+					<tr><td>maxlength&nbsp;&equals;&nbsp;&quot;入力可能な最大文字数&Prime;</td><td>&emsp;</td><td>フィールドに入力できる最大文字数を指定する。<br>初期値では入力文字数に制限はない。</td></tr>
+				</table>
+			</p>
+			<br>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;会員番号&nbsp;&colon;&nbsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;text&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;</font>&nbsp;&quot;number<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;パスワード&nbsp;&colon;&nbsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;password&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;</font>&nbsp;&quot;pw&nbsp;<font id = "pink_b">size&nbsp;&equals;&nbsp;</font>&quot;10&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							会員番号&nbsp;&colon;&nbsp;<input type = "text" name = "number">
+						</p>
+
+						<p>
+							パスワード&nbsp;&colon;&nbsp;<input type = "password" name = "pw" size = "10">
+						</p>
+					</form>
+				</div>
+			</div>
+
+
+			<h2 id = "def_title">
+				複数行の入力フィールドを作成する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;textarea&nbsp;&starf;&gt;</font>&sim;<font id = "orange_b">&lt;&sol;textarea&gt;</font><br>
+			</h2>
+
+			<p>
+				複数行を入力可能なテキスト入力フィールドを作成する。&lt;textarea&gt;&sim;&lt;&sol;textarea&gt;タグ内にテキストを入力すると、入力フィールドの中にそのテキストをあらかじめ表示させることができる。<br>
+			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>name&nbsp;&equals;&nbsp;&quot;名前&Prime;</td><td>&emsp;</td><td>入力フィールドを名前を指定する。</td></tr>
+					<tr><td>cols&nbsp;&equals;&nbsp;&quot;フィールド幅&Prime;</td><td>&emsp;</td><td>フィールドの横幅を文字数&lpar;整数&rpar;で指定する。ただし、表示される幅はブラウザによって異なる。この属性は必ず指定する。</td></tr>
+					<tr><td>rows&nbsp;&equals;&nbsp;&quot;行数&Prime;</td><td>&emsp;</td><td>行数を指定する。この属性は必ず指定する。</td></tr>
+				</table>
+			</p>
+			<br>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;サンプルです。入力せよ。<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;textarea&nbsp;name&nbsp;&equals;&nbsp;</font>&quot;sample1&Prime;<font id = "pink_b">rows&nbsp;&equals;&nbsp;</font>&quot;8&Prime;<font id = "pink_b">cols&nbsp;&equals;&nbsp;</font>&quot;30&Prime;</font><font id = "pink_b">&gt;&lt;&sol;textarea&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;textarea&nbsp;name&nbsp;&equals;&nbsp;</font>&quot;sample2&Prime;<font id = "pink_b">rows&nbsp;&equals;&nbsp;</font>&quot;8&Prime;<font id = "pink_b">cols&nbsp;&equals;&nbsp;</font>&quot;30&Prime;</font><font id = "pink_b">&gt;</font>サンプルです<font id = "pink_b">&lt;&sol;textarea&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							サンプルです。入力せよ。
+						</p>
+
+						<p>
+							<textarea name = "sample1" rows = "8" cols = "30"></textarea>
+						</p>
+
+						<p>
+							<textarea name = "sample2" rows = "8" cols = "30">サンプルです</textarea>
+						</p>
+					</form>
+				</div>
+			</div>
+
 	</body>
 </html>

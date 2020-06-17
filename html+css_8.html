@@ -494,5 +494,200 @@
 				</div>
 			</div>
 
+
+			<h2 id = "def_title">
+				ラジオボタンを作成する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;&nbsp;</font>&quot;radio&Prime;&nbsp;<font id = "orange_b">&starf;&gt;</font><br>
+			</h2>
+
+			<p>
+				&lt;input&gt;タグのtype属性に&quot;radio&Prime;を指定することで、ラジオボタンを作成する。<br>
+			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>name&nbsp;&equals;&nbsp;&quot;名前&Prime;</td><td>&emsp;</td><td>ボタンを名前を指定する。<br>同じ名前のボタンが複数存在する場合には、同一のグループと認識され、共通の項目に対する選択肢として機能する。</td></tr>
+					<tr><td>value&nbsp;&equals;&nbsp;&quot;テキスト&Prime;</td><td>&emsp;</td><td>name属性とともにサーバーへ送信される値を指定する。</td></tr>
+					<tr><td>checked</td><td>&emsp;</td><td>ボタンがあらかじめ選択された状態で表示される。</td></tr>
+				</table>
+			</p>
+			<br>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;購入したい果物を一つ選択せよ。<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;radio&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;orange&Prime;<font id = "pink_b">&gt;</font>オレンジ<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;radio&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;apple&Prime;<font id = "pink_b">&gt;</font>りんご<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;radio&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;strawberry&Prime;<font id = "pink_b">&gt;</font>イチゴ<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							購入したい果物を一つ選択せよ。
+						</p>
+
+						<p>
+							<input type = "radio" name = "fruit" value = "orange" checked>オレンジ
+							<input type = "radio" name = "fruit" value = "apple">りんご
+							<input type = "radio" name = "fruit" value = "strawberry">イチゴ
+						</p>
+					</form>
+				</div>
+			</div>
+
+
+			<h2 id = "def_title">
+				チェックボックスを作成する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;&nbsp;</font>&quot;checkbox&Prime;&nbsp;<font id = "orange_b">&starf;&gt;</font><br>
+			</h2>
+
+			<p>
+				&lt;input&gt;タグのtype属性に&quot;checkbox&Prime;を指定することで、複数選択が可能なチェックボックスを作成する。<br>
+			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>name&nbsp;&equals;&nbsp;&quot;名前&Prime;</td><td>&emsp;</td><td>チェックボックスを名前を指定する。<br>同じ名前のチェックボックスが複数存在する場合には、同一のグループと認識され、共通の項目に対する選択肢として機能する。</td></tr>
+					<tr><td>value&nbsp;&equals;&nbsp;&quot;テキスト&Prime;</td><td>&emsp;</td><td>name属性とともにサーバーへ送信される値を指定する。</td></tr>
+					<tr><td>checked</td><td>&emsp;</td><td>チェックボックスがあらかじめ選択された状態で表示される。</td></tr>
+				</table>
+			</p>
+			<br>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;購入したい果物を全て選択せよ。<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;checkbox&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;orange&Prime;<font id = "pink_b">&gt;</font>オレンジ<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;checkbox&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;apple&Prime;<font id = "pink_b">&gt;</font>りんご<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;checkbox&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;strawberry&Prime;<font id = "pink_b">&gt;</font>イチゴ<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							購入したい果物を全て選択せよ。
+						</p>
+
+						<p>
+							<input type = "checkbox" name = "fruit" value = "orange" checked>オレンジ
+							<input type = "checkbox" name = "fruit" value = "apple">りんご
+							<input type = "checkbox" name = "fruit" value = "strawberry">イチゴ
+						</p>
+					</form>
+				</div>
+			</div>
+
+
+			<h2 id = "def_title">
+				チェック欄を非表示で送信するテキストを指定する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;input&nbsp;type&nbsp;&equals;&nbsp;</font>&quot;hidden&Prime;&nbsp;<font id = "orange_b">&starf;&gt;</font><br>
+			</h2>
+
+			<p>
+				&lt;input&gt;タグのtype属性に&quot;hidden&Prime;を指定することで、非表示で送信するテキストを指定できる。<br>
+			</p>
+
+			<h3 id = "aqua_b">
+				属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				<table>
+					<tr><td>name&nbsp;&equals;&nbsp;&quot;名前&Prime;</td><td>&emsp;</td><td>隠しコントロールの名前を指定する。<br>フォームのデータが送信される際、隠しコントロールの名前とvalue属性がセットで送信される。</td></tr>
+					<tr><td>value&nbsp;&equals;&nbsp;&quot;テキスト&Prime;</td><td>&emsp;</td><td>name属性とともにサーバーへ送信される値を指定する。</td></tr>
+				</table>
+			</p>
+			<br>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;hidden&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;</font>&nbsp;&quot;sample&Prime;&nbsp;<font id = "pink_b">value&nbsp;&equals;</font>&nbsp;&quot;fruitquest&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;購入したい果物を全て選択せよ。<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;checkbox&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;orange&Prime;<font id = "pink_b">&gt;</font>オレンジ<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;checkbox&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;apple&Prime;<font id = "pink_b">&gt;</font>りんご<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;input&nbsp;type&nbsp;&equals;</font>&nbsp;&quot;checkbox&Prime;&nbsp;<font id = "pink_b">name&nbsp;&equals;&nbsp;</font>&quot;fruit&Prime;<font id = "pink_b">value&nbsp;&equals;&nbsp;</font>&quot;strawberry&Prime;<font id = "pink_b">&gt;</font>イチゴ<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							<input type = "hidden" name = "sample" value = "fruitquest">
+						</p>
+
+						<p>
+							購入したい果物を全て選択せよ。
+						</p>
+
+						<p>
+							<input type = "checkbox" name = "fruit" value = "orange" checked>オレンジ
+							<input type = "checkbox" name = "fruit" value = "apple">りんご
+							<input type = "checkbox" name = "fruit" value = "strawberry">イチゴ
+						</p>
+					</form>
+				</div>
+			</div>
 	</body>
 </html>

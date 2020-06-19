@@ -416,3 +416,8 @@ td.sample21-4
 {
 	border:1px solid gray;
 }
+
+td.vatop
+{
+	vertical-align:top;
+}

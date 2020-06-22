@@ -747,7 +747,7 @@
 			</h2>
 
 			<h2 id = "def_con">
-				<font id = "orange_b">&lt;select&nbsp;size&nbsp;&equals;&nbsp;</font>&quot;&starf;&Prime;&nbsp;<font id = "orange_b">&diams;&gt;</font>&nbsp;&sim;&nbsp;<font id = "orange_b">&lt;option&nbsp;&utrif;&gt;</font>&sim;<font id = "orange_b">&lt;&sol;option&gt;&lt;&sol;select&gt;</font><br>
+				<font id = "orange_b">&lt;select&nbsp;size&nbsp;&equals;&nbsp;</font>&quot;&starf;&Prime;&nbsp;<font id = "orange_b">&diams;&gt;&lt;option&nbsp;&utrif;&gt;</font>&sim;<font id = "orange_b">&lt;&sol;option&gt;&lt;&sol;select&gt;</font><br>
 			</h2>
 
 			<p>
@@ -823,6 +823,85 @@
 							<option value = "strawberry">いちご</option>
 							<option value = "grape">ぶどう</option>
 							<option value = "other">果物は嫌い</option>
+						</select>
+					</form>
+				</div>
+			</div>
+
+
+			<h2 id = "def_title">
+				メニューの選択項目をグループ化する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;optgroup&nbsp;label&nbsp;&equals;&nbsp;</font>&quot;&starf;&Prime;&nbsp;<font id = "orange_b">&gt;</font><font id = "orange_b">&lt;option&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;&diams;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;option&gt;&lt;&sol;optgroup&gt;</font><br>
+			</h2>
+
+			<p>
+				&lt;optgroup&gt;タグを使用すると、&lt;select&gt;と&lt;option&gt;で作成されたメニューの選択項目をグループ化することができる。対応しているブラウザでは、メニューが階層化されて表示される。<br>
+			</p>
+
+			<h3 id = "aqua_b">
+				&lt;optgroup&gt;のlabel属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				グループ名をを指定する。本属性で指定したグループ名が、個々の選択項目とともに表示される。
+			</p>
+
+			<h3 id = "aqua_b">
+				&lt;option&gt;のlabel属性&lpar;&diams;&rpar;
+			</h3>
+
+			<p>
+				選択項目で表示するテキストを指定する。通常は&lt;option&gt;&sim;&lt;&sol;option&gt;タグ内のテキストよりも簡略化した項目名を指定する。未対応のブラウザでは、option要素の内容よりも優先して表示される。label属性が未指定の場合や、本属性に未対応なブラウザでは、option属性の内容がそのまま選択肢として表示される。
+			</p>
+			<br>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;好きな果物を選択せよ。<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;select&nbsp;name&nbsp;&equals;</font>&nbsp;&quot;fruitquest&Prime;&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;optgroup&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;柑橘&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;option&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;オレンジ&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;orange&Prime;<font id = "pink_b">&gt;</font>オレンジ<font id = "pink_b">&lt;&sol;option&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;option&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;みかん&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;mandarin_orange&Prime;<font id = "pink_b">&gt;</font>みかん<font id = "pink_b">&lt;&sol;option&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;option&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;甘夏&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;sweet_summer&Prime;<font id = "pink_b">&gt;</font>甘夏<font id = "pink_b">&lt;&sol;option&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;optgroup&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;optgroup&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;りんご&Prime;<font id = "pink_b">&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;option&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;富士&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;fuji&Prime;<font id = "pink_b">&gt;</font>富士<font id = "pink_b">&lt;&sol;option&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;option&nbsp;label&nbsp;&equals;</font>&nbsp;&quot;王林&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;orin&Prime;<font id = "pink_b">&gt;</font>王林<font id = "pink_b">&lt;&sol;option&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;optgroup&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;select&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							好きな果物を選択せよ。
+						</p>
+
+						<select name = "fruitquest">
+							<optgroup label = "柑橘">
+								<option label = "オレンジ" value = "orange">オレンジ</option>
+								<option label = "みかん" value = "mandarin_orange">みかん</option>
+								<option label = "甘夏" value = "sweet_summer">甘夏</option>
+							</optgroup>
+							<optgroup label = "りんご">
+								<option label = "富士" value = "fuji">富士</option>
+								<option label = "王林" value = "orin">王林</option>
+							</optgroup>
 						</select>
 					</form>
 				</div>

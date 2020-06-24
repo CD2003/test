@@ -906,5 +906,97 @@
 					</form>
 				</div>
 			</div>
+
+
+			<h2 id = "def_title">
+				フォームの部品ををグループ化する	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;fieldset&gt;</font>&sim;<font id = "orange_b">&lt;&sol;fieldset&gt;</font><br>
+				<font id = "orange_b">&lt;legend&gt;</font>&sim;<font id = "orange_b">&lt;&sol;legend&gt;</font><br>
+			</h2>
+
+			<p>
+			&lt;fieldset&gt;&sim;&lt;&sol;fieldset&gt;タグを使用すると、フォームを構成する様々な部品をグループ化できる。<br>
+			&lt;legend&gt;&sim;&lt;&sol;legend&gt;タグは、グループ化されたフォーム部品にキャプション&lpar;タイトル、説明など&rpar;を付加できる。使用する場合には、&lt;fieldset&gt;&sim;&lt;&sol;fieldset&gt;タグ内の一番最初におく。
+			</p>
+			
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;fieldset&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;legend&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;好きな果物アンケート<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;legend&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;好きな果物を選択せよ。<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;select&nbsp;name&nbsp;&equals;&nbsp;&quot;fruitquest&Prime;&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;optgroup&nbsp;label&nbsp;&equals;&nbsp;&quot;柑橘&Prime;&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;option&nbsp;label&nbsp;&equals;&nbsp;&quot;オレンジ&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;orange&Prime;&gt;オレンジ&lt;&sol;option&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;option&nbsp;label&nbsp;&equals;&nbsp;&quot;みかん&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;mandarin_orange&Prime;&gt;みかん&lt;&sol;option&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;option&nbsp;label&nbsp;&equals;&nbsp;&quot;甘夏&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;sweet_summer&Prime;&gt;甘夏&lt;&sol;option&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;&sol;optgroup&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;optgroup&nbsp;label&nbsp;&equals;&nbsp;&quot;りんご&Prime;&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;option&nbsp;label&nbsp;&equals;&nbsp;&quot;富士&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;fuji&Prime;&gt;富士&lt;&sol;option&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;option&nbsp;label&nbsp;&equals;&nbsp;&quot;王林&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;orin&Prime;&gt;王林&lt;&sol;option&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;&sol;optgroup&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;&sol;select&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;fieldset&gt;</font><br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;回答ありがとうございました。<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;input&nbsp;type&nbsp;&equals;&nbsp;&quot;submit&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;送信&Prime;&gt; &lt;input&nbsp;type&nbsp;&equals;&nbsp;&quot;reset&Prime;&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<fieldset>
+							<legend>
+								好きな果物アンケート
+							</legend>
+
+							<p>
+									好きな果物を選択せよ。
+							</p>
+
+							<select name = "fruitquest">
+								<optgroup label = "柑橘">
+									<option label = "オレンジ" value = "orange">オレンジ</option>
+									<option label = "みかん" value = "mandarin_orange">みかん</option>
+									<option label = "甘夏" value = "sweet_summer">甘夏</option>
+								</optgroup>
+								<optgroup label = "りんご">
+									<option label = "富士" value = "fuji">富士</option>
+									<option label = "王林" value = "orin">王林</option>
+								</optgroup>
+							</select>
+						</fieldset>
+
+						<p>
+							回答ありがとうございました。
+						</p>
+
+						<p>
+							<input type = "submit" value = "送信"><input type = "reset">
+						</p>
+					</form>
+				</div>
+			</div>
 	</body>
 </html>

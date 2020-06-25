@@ -998,5 +998,72 @@
 					</form>
 				</div>
 			</div>
+
+
+			<h2 id = "def_title">
+				部品にラベルをつける	
+			</h2>
+
+			<h2 id = "def_con">
+				<font id = "orange_b">&lt;label&gt;</font>&sim;<font id = "orange_b">&lt;&sol;label&gt;</font><br>
+				<font id = "orange_b">&lt;label&nbsp;for&nbsp;&equals;</font>&nbsp;&quot;&starf;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;label&gt;</font><br>
+			</h2>
+
+			<p>
+				フォームを構成する様々な部品と、ラベルを関連付ける。value属性によってラベルをつけられない部品に部品にラベルをつけて、その部品とラベルを連動させる場合に使用する。<br>
+				指定には、&lt;label&gt;タグの見を使用する方法と、for属性を利用する方法がある。&lt;label&gt;タグで指定する場合、ラベルとなるテキストと関連付けたい部品を&lt;label&gt;&sim;&lt;&sol;label&gt;タグ内に記述する。
+			</p>
+			
+
+			<h3 id = "aqua_b">
+				for属性&lpar;&starf;&rpar;	
+			</h3>
+
+			<p>
+				本属性を利用する際、&lt;label&nbsp;for&nbsp;&equals;&nbsp;&quot;&starf;&Prime;&gt;&sim;&lt;&sol;label&gt;タグ内にラベルとなるテキストを記述する。関連付けたい部品にid属性を設定し、この値をfor属性に指定することで、ラベルと部品が連動する。
+			</p>
+
+
+			<div id = "nav_frame">
+				<div id = "test">
+					&lt;form&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;みかんのプレゼント<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;input&nbsp;type&nbsp;&equals;&nbsp;&quot;radio&Prime;&nbsp;name&nbsp;&equals;&nbsp;&quot;orange&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;yes&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;ok&Prime;&gt;<font id = "orange_b">&lt;label&nbsp;for&nbsp;&equals;&nbsp;</font>&quot;ok&Prime;<font id = "orange_b">&gt;</font>いただきます<font id = "orange_b">&lt;&sol;label&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;input&nbsp;type&nbsp;&equals;&nbsp;&quot;radio&Prime;&nbsp;name&nbsp;&equals;&nbsp;&quot;orange&Prime;&nbsp;value&nbsp;&equals;&nbsp;&quot;no&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;no&Prime;&gt;<font id = "orange_b">&lt;label&nbsp;for&nbsp;&equals;&nbsp;</font>&quot;no&Prime;<font id = "orange_b">&gt;</font>結構です<font id = "orange_b">&lt;&sol;label&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "orange_b">&lt;label&gt;</font>E-mail：&lt;input&nbsp;type&nbsp;&equals;&nbsp;&quot;email&Prime;&nbsp;name&nbsp;&equals;&nbsp;&quot;email&Prime;&gt;<font id = "orange_b">&lt;&sol;label&gt;</font><br>
+					&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+					&lt;&sol;from&gt;<br>
+				</div>
+			</div>
+
+			<h3 id = "nav_margin">
+				&#9702;出力結果
+			</h3>
+
+			<div id = "nav_frame">
+				<div id = "test">
+					<form>
+						<p>
+							みかんのプレゼント
+						</p>
+
+						<p>
+							<input type = "radio" name = "orange" value = "yes" id = "ok"><label for = "ok">いただきます</label><br>
+							<input type = "radio" name = "orange" value = "no" id = "no"><label for = "no">結構です</label>
+						</p>
+
+						<p>
+							<label>E-mail：<input type = "email" name = "email"></label>
+						</p>
+					</form>
+				</div>
+			</div>
 	</body>
 </html>

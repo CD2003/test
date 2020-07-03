@@ -70,11 +70,73 @@
 			</div>
 		</div>
 
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 		<h2 id = "link_move">
 			<h2 id = "def_title">
 				指定場所への移動
 			</h2>
 		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;&sharp;&starf;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;a&gt;</font><br>
+			<font id = "orange_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;&diams;&sharp;&starf;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;a&gt;</font><br>
+			<font id = "orange_b">&lt;&utrif;&nbsp;id&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;&starf;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;&utrif;&gt;</font>
+		</h2>
+
+		<p>
+			&lt;a&gt;タグとid属性で、指定位置に移動するリンクを作成できる。<br>
+			同一ページ内での移動は、リンク先のタグに&lt;&utrif;&nbsp;id&nbsp;&equals;&nbsp;&quot;&starf;&Prime;&gt;のようにid属性で名前を付与し、指定した名前をリンク元の&lt;a&nbsp;href&nbsp;&equals;&nbsp;&quot;&sharp;&starf;&Prime;&gt;&sim;&lt;&sol;a&gt;の値に指定する。<br>
+			他のページの移動は、&lt;a&nbsp;href&nbsp;&equals;&nbsp;&quot;&diams;&sharp;&starf;&Prime;&gt;&sim;&lt;&sol;a&gt;のようにid属性を指定した名前&lpar;&starf;&rpar;の前にリンク先のURL&lpar;&diams;&rpar;を追加する。<br>
+		</p>
+
+		<p>
+			<table>
+				<thead>
+					<tr><th>属性</th><th>指定方法</th><th>説明</th></tr>
+				</thead>
+
+				<tbody>
+					<tr><td>&starf;</td><td>URL</td><td>絶対URLあるいは相対URLを入力</td></tr>
+				</tbody>
+			</table>
+		</p>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;https&colon;&sol;&sol;www.bing.com&sol;&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;bingの検索ページへ<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;a&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;https&colon;&sol;&sol;www.google.com&sol;&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;googleの検索ページへ<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;a&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&lt;&sol;body&gt;<br>
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<p>
+					<a href = "https://www.bing.com/">
+						bingの検索ページへ
+					</a>
+				</p>
+
+				<p>
+					<a href = "https://www.google.com/">
+						googleの検索ページへ
+					</a>
+				</p>
+			</div>
+		</div>
 	</body>
 </html>

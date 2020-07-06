@@ -96,7 +96,9 @@
 				</thead>
 
 				<tbody>
-					<tr><td>&starf;</td><td>URL</td><td>絶対URLあるいは相対URLを入力</td></tr>
+					<tr><td>&starf;</td><td>名前</td><td>リンクに名前を作成する</td></tr>
+					<tr><td>&diams;</td><td>URL</td><td>リンク先のURLを入力する</td></tr>
+					<tr><td>&utrif;</td><td>要素名</td><td>要素を入力する</td></tr>
 				</tbody>
 			</table>
 		</p>
@@ -105,14 +107,14 @@
 			<div id = "test">
 				&lt;body&gt;<br>
 				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;https&colon;&sol;&sol;www.bing.com&sol;&Prime;<font id = "pink_b">&gt;</font><br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;bingの検索ページへ<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;html+css_5_body.html&sharp;link_set&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リンクの指定<br>
 				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;a&gt;</font><br>
 				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
 
 				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;https&colon;&sol;&sol;www.google.com&sol;&Prime;<font id = "pink_b">&gt;</font><br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;googleの検索ページへ<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;html+css_5_body.html&sharp;link_move&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;指定場所への移動<br>
 				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;a&gt;</font><br>
 				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
 				&lt;&sol;body&gt;<br>
@@ -126,14 +128,69 @@
 		<div id = "nav_frame">
 			<div id = "test">
 				<p>
-					<a href = "https://www.bing.com/">
-						bingの検索ページへ
+					<a href = "html+css_5_body.html#link_set">
+						リンクの設定
 					</a>
 				</p>
 
 				<p>
-					<a href = "https://www.google.com/">
-						googleの検索ページへ
+					<a href = "html+css_5_body.html#link_move">
+						指定場所への移動
+					</a>
+				</p>
+			</div>
+		</div>
+
+
+		<h2 id = "window_move">
+			<h2 id = "def_title">
+				新しいウィンドウ&lpar;タブ&rpar;にリンク先を表示
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">&lt;a&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;&starf;&Prime;&nbsp;<font id = "orange_b">target&nbsp;&equals;</font>&nbsp;&quot;&diams;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;a&gt;</font><br>
+		</h2>
+
+		<p>
+			target属性を使用することで、読み込み先のウィンドウを指定する。
+		</p>
+
+		<p>
+			<table>
+				<thead>
+					<tr><th>属性</th><th>指定方法</th><th>説明</th></tr>
+				</thead>
+
+				<tbody>
+					<tr><td>&starf;</td><td>URL</td><td>リンク先のURLを入力する</td></tr>
+					<tr><td>&diams;</td><td>url</td><td>読み込み先ウィンドウのURLを入力する</td></tr>
+					<tr><td></td><td>_blank</td><td>別のウィンドウに表示する</td></tr>
+				</tbody>
+			</table>
+		</p>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;a</font>&nbsp;href&nbsp;&equals;</font>&nbsp;&quot;html+css_5_body.html&sharp;link_set&Prime;&nbsp;<font id = "pink_b">target&nbsp;&equals;&nbsp;</font>&quot;_blank&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リンクの指定<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;a&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&lt;&sol;body&gt;<br>
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<p>
+					<a href = "html+css_5_body.html#link_set" target = "_blank">
+						リンクの設定
 					</a>
 				</p>
 			</div>

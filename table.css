@@ -1,5 +1,36 @@
 @charset "UTF-8";
 
+table.Attribution
+{
+	border-collapse:collapse;
+	border:2px #FF8856 solid;
+}
+
+tr.Attribution
+{
+	background-color:#FF8856;
+}
+
+th.Attribution
+{
+	color:white;
+	border:1px solid;
+	border-bottom-color:#FF8856;
+}
+
+td.AttributionL
+{
+	background-color:#FFDBC9;
+	border:1px #FF8856 solid;
+	text-align:center;
+}
+
+td.Attribution
+{
+	border:1px #FF8856 solid;
+	text-align:center;
+}
+
 table.sample2
 {
 	border:2px gray solid;

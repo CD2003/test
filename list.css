@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+ul.sample3-1
+{
+	list-style-type:none;
+}
+
+li.sample3-2
+{
+	list-style-type:disc;
+}
+
+li.sample3-3
+{
+	list-style-type:circle;
+}
+
+li.sample3-4
+{
+	list-style-type:square;
+}
+
+ol.sample4-1
+{
+	list-style-type:lower-alpha;
+}
+
+li.sample4-2
+{
+	list-style-type:lower-roman;
+}
+
+li.sample4-3
+{
+	list-style-type:upper-roman;
+}

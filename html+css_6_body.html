@@ -53,3 +53,235 @@
 			</div>
 		</div>
 
+
+		<h2 id = "set_ol">
+			<h2 id = "def_title">
+				番号付きのリストを作成する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">&lt;ol&gt;&lt;li&gt;</font>&sim;<font id = "orange_b">&lt;&sol;ol&gt;&lt;&sol;li&gt;</font>
+		</h2>
+
+		<p>
+			&lt;ol&gt;&sim;&lt;&sol;ol&gt;タグで、その範囲&lpar;&sim;&rpar;が番号付き&lpar;順番が重要&rpar;のリストであることを示す。<br>
+			&lt;li&gt;&sim;&lt;&sol;li&gt;タグでリストで表示する項目&lpar;各リストの先頭に数字&rpar;が表示される。
+		</p>
+
+		<div id = "nav_frame">
+	
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;好きな果物のベスト3は以下です。<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ol&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>林檎<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ol&gt;</font><br>
+				&lt;&sol;body&gt;
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<p>
+					好きな果物はのベスト3は以下です。
+				</p>
+				<ol>
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li>梨</li>
+				</ol>
+			</div>
+		</div>
+
+
+		<h2 id = "change_mark">
+			<h2 id = "def_title">
+				リストのマークを変更する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">list-style-type</font>&colon;&starf;
+		</h2>
+
+		<p>
+			リストの各項目の先頭に表示されるマークの種類を変更する。<br>
+			なお、リスト番号の種類を変更する場合にもlist-style-typeプロパティを使用する。
+		</p>
+
+		<p>
+			<table class = "Attribution">
+				<thead>
+					<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">&emsp;&emsp;&emsp;説明&emsp;&emsp;&emsp;</th></tr>
+				</thead>
+				<tbody>
+					<tr><td class = "AttributionL" rowspan = "4">&starf;</td><td class = "Attribution">disc</td><td class = "Attribution">黒丸&lpar;初期値&rpar;</td></tr>
+					<tr><td class = "Attribution">circle</td><td class = "Attribution">白丸</td></tr>
+					<tr><td class = "Attribution">square</td><td class = "Attribution">資格</td></tr>
+					<tr><td class = "Attribution">none</td><td class = "Attribution">マークなし</td></tr>
+				</tbody>
+			</table>
+		</p>
+		<div id = "nav_frame">
+				&lbrack;html&rbrack;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ul&nbsp;&equals;&nbsp;&quot;sample3-1&Prime;&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;蜜柑&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;林檎&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;梨&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ul&gt;</font><br>
+				<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;ul&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;class&nbsp;&equals;&nbsp;&quot;sample3-2&Prime;&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;class&nbsp;&equals;&nbsp;&quot;sample3-3&Prime;&gt;</font>林檎<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;class&nbsp;&equals;&nbsp;&quot;sample3-4&Prime;&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;ul&gt;<br>
+				&lt;&sol;body&gt;
+				<br>
+				<br>
+				&lbrack;css&rbrack;<br>
+				ul.sample3-1<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;none&semi;<br>
+				&rbrace;<br>
+				<br>
+				li.sample3-2<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;disc&semi;<br>
+				&rbrace;<br>
+				<br>
+				li.sample3-3<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;circle&semi;<br>
+				&rbrace;<br>
+				<br>
+				li.sample3-4<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;square&semi;<br>
+				&rbrace;
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<ul class = "sample3-1">
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li>梨</li>
+				</ul>
+
+				<ul>
+					<li class = "sample3-2">蜜柑</li>
+					<li class = "sample3-3">林檎</li>
+					<li class = "sample3-4">梨</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<h2 id = "change_type">
+			<h2 id = "def_title">
+				リストの番号の種類を変更する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">list-style-type</font>&colon;&starf;
+		</h2>
+
+		<p>
+			リストの各項目の先頭に表示される番号の種類の変更にも、list-style-typeプロパティを使用する。
+		</p>
+
+		<p>
+			<table class = "Attribution">
+				<thead>
+					<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">&emsp;&emsp;&emsp;説明&emsp;&emsp;&emsp;</th></tr>
+				</thead>
+				<tbody>
+					<tr><td class = "AttributionL" rowspan = "11">&starf;</td><td class = "Attribution">decimal</td><td class = "Attribution">10進数&lpar;1、2、3、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">decimal-leading-zero</td><td class = "Attribution">0を頭に付けた10進数&lpar;01、02、03、&hellip;、98、99&rpar;</td></tr>
+					<tr><td class = "Attribution">lower-roman</td><td class = "Attribution">小文字ローマ数字&lpar;&#8560;、&#8561;、&#8562;、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">upper-roman</td><td class = "Attribution">大文字ローマ数字&lpar;&#8544;、&#8545;、&#8546;、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">lower-greek</td><td class = "Attribution">小文字ギリシア文字&lpar;&alpha;、&beta;、&gamma;、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">upper-greek</td><td class = "Attribution">大文字ギリシア文字&lpar;&Alpha;、&Beta;、&Gamma;、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">lower-latin</td><td class = "Attribution" rowspan = "2">小文字アルファベット&lpar;a、b、c、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">lower-alpha</td></tr>
+					<tr><td class = "Attribution">upper-latin</td><td class = "Attribution" rowspan = "2">大文字アルファベット&lpar;A、B、C、&hellip;&rpar;</td></tr>
+					<tr><td class = "Attribution">upper-alpha</td></tr>
+					<tr><td class = "Attribution">none</td><td class = "Attribution">マークなし</td></tr>
+				</tbody>
+			</table>
+		</p>
+		<div id = "nav_frame">
+				&lbrack;html&rbrack;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ol&nbsp;&equals;&nbsp;&quot;sample4-1&Prime;&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;蜜柑&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;林檎&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;梨&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;桃&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ol&gt;</font><br>
+				<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;ol&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;蜜柑&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;林檎&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;class&nbsp;&equals;&nbsp;&quot;sample4-2&Prime;&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;class&nbsp;&equals;&nbsp;&quot;sample4-3&Prime;&gt;</font>桃<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;ol&gt;<br>
+				&lt;&sol;body&gt;
+				<br>
+				<br>
+				&lbrack;css&rbrack;<br>
+				ol.sample4-1<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;lower-alpha&semi;<br>
+				&rbrace;<br>
+				<br>
+				li.sample4-2<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;lower-roman&semi;<br>
+				&rbrace;<br>
+				<br>
+				li.sample4-3<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">list-style-type</font>&colon;upper-roman&semi;<br>
+				&rbrace;<br>
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<ol class = "sample4-1">
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li>梨</li>
+					<li>桃</li>
+				</ol>
+
+				<ol>
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li class = "sample4-2">梨</li>
+					<li class = "sample4-3">桃</li>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>

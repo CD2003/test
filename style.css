@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("font.css");
 @import url("table.css");
+@import url("list.css");
 /* クラスセレクタ
    他に似た機能を持つセレクタにはIDセレクタがあるが、
    通常はクラスセレクタを用い、Javascriptで使用することがある */

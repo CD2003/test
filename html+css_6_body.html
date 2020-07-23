@@ -283,5 +283,186 @@
 				</ol>
 			</div>
 		</div>
+
+
+		<h2 id = "change_number">
+			<h2 id = "def_title">
+				リストの開始番号を変更する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">&lt;ol&nbsp;start&nbsp;&equals;</font>&quot;&starf;&Prime;<font id = "orange_b">&gt;</font>&lt;li&gt;&sim;&lt;&sol;li&gt;<font id = "orange_b">&lt;&sol;ol&gt;</font>
+		</h2>
+
+		<p>
+			&lt;ol&gt;タグのstart属性で、リストの開始番号を指定する。<br>
+			番号を指定には、整数を使用する&lpar;初期値は&quot;1&Prime;&rpar;。また、type属性との併用が可能&lpar;例えば、&lt;ol&nbsp;type&nbsp;&equals;&nbsp;&quot;a&Prime;&nbsp;start&nbsp;&equals;&nbsp;&quot;3&Prime;&gt;とすると、開始番号は&quot;c&Prime;となる&rpar;。
+		</p>
+
+		<p>
+			<table class = "Attribution">
+				<thead>
+					<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">&emsp;&emsp;&emsp;説明&emsp;&emsp;&emsp;</th></tr>
+				</thead>
+				<tbody>
+					<tr><td class = "AttributionL">&starf;</td><td class = "Attribution">整数</td><td class = "Attribution">開始番号</td></tr>
+				</tbody>
+			</table>
+		</p>
+		<div id = "nav_frame">
+				&lbrack;html&rbrack;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ol&nbsp;start&nbsp;&equals;&nbsp;&quot;</font>3<font id = "pink_b">&Prime;&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>林檎<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>桃<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ol&gt;</font><br>
+				<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ol</font>&nbsp;type&nbsp;&equals;&nbsp;&quot;I&Prime;&nbsp;<font id = "pink_b">start&nbsp;&equals;</font>&nbsp;&quot;3&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>林檎<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&gt;</font>桃<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ol&gt;</font><br>
+				&lt;&sol;body&gt;
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<ol start = "3">
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li>梨</li>
+					<li>桃</li>
+				</ol>
+
+				<ol type = "I" start = "3">
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li>梨</li>
+					<li>桃</li>
+				</ol>
+			</div>
+		</div>
+
+
+		<h2 id = "change_sequential_number">
+			<h2 id = "def_title">
+				リストの連番を変更する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			&lt;ol&gt;<font id = "orange_b">&lt;li&nbsp;value&nbsp;&equals;</font>&quot;&starf;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;li&gt;</font>&lt;&sol;ol&gt;
+		</h2>
+
+		<p>
+			&lt;li&gt;タグのvalue属性で、リスト項目の番号を変更する。<br>
+			番号を指定には、整数を使用する。次の項目からは、value属性で指定した番号からの連番となる。
+		</p>
+
+		<p>
+			<table class = "Attribution">
+				<thead>
+					<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">&emsp;&emsp;&emsp;説明&emsp;&emsp;&emsp;</th></tr>
+				</thead>
+				<tbody>
+					<tr><td class = "AttributionL">&starf;</td><td class = "Attribution">整数</td><td class = "Attribution">番号</td></tr>
+				</tbody>
+			</table>
+		</p>
+		<div id = "nav_frame">
+				&lbrack;html&rbrack;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ol&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;蜜柑&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;林檎&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;value&nbsp;&equals;</font>&nbsp;&quot;5&Prime;<font id = "pink_b">&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;桃&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ol&gt;</font><br>
+				<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;ol</font>&nbsp;type&nbsp;&equals;&nbsp;&quot;i&Prime;<font id = "pink_b">&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;蜜柑&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;林檎&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;li&nbsp;value&nbsp;value&nbsp;&equals;</font>&nbsp;&quot;5&Prime;<font id = "pink_b">&gt;</font>梨<font id = "pink_b">&lt;&sol;li&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;桃&lt;&sol;li&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;ol&gt;</font><br>
+				&lt;&sol;body&gt;
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<ol>
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li value = "5">梨</li>
+					<li>桃</li>
+				</ol>
+
+				<ol type = "i">
+					<li>蜜柑</li>
+					<li>林檎</li>
+					<li value = "5">梨</li>
+					<li>桃</li>
+				</ol>
+			</div>
+		</div>
+
+
+		<h2 id = "definition">
+			<h2 id = "def_title">
+				用語の定義をリスト表示する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">&lt;dl&gt;&lt;dt&gt;</font>&sim;<font id = "orange_b">&lt;&sol;dt&gt;&lt;dd&gt;</font>&sim;<font id = "orange_b">&lt;&sol;dd&gt;&lt;&sol;dl&gt;</font>
+		</h2>
+
+		<p>
+			&lt;dl&gt;&sim;&lt;&sol;dl&gt;でその範囲を定義リストに指定する。定義リストとは、定義したい用語と用語に対する解説文とで形成されたリストを指す。<br>
+			&lt;dt&gt;&sim;&lt;&sol;dt&gt;に定義したい用語を、&lt;dd&gt;&sim;&lt;&sol;dd&gt;にdt要素で指定した要素に対する解説や定義を記述する。<br>
+			&lt;dt&gt;と&lt;dd&gt;はセットで使用するが、&lt;dl&gt;&sim;&lt;&sol;dl&gt;間には複数並べることが可能である。
+		</p>
+
+		<div id = "nav_frame">
+				&lbrack;html&rbrack;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;dl&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;dt&gt;</font>蜜柑<font id = "pink_b">&lt;&sol;dt&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;dd&gt;</font>柑橘系の一種。外見色は橙色。<font id = "pink_b">&lt;&sol;dd&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;dt&gt;</font>富士<font id = "pink_b">&lt;&sol;dt&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;dd&gt;</font>林檎系の一種。外見色は赤色。<font id = "pink_b">&lt;&sol;dd&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;&sol;dl&gt;</font><br>
+				&lt;&sol;body&gt;
+			</div>
+		</div>
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				<dl>
+					<dt>蜜柑</dt>
+					<dd>柑橘系の一種。外見色は橙色。</dd>
+					<dt>林檎</dt>
+					<dd>林檎系の一種。外見色は赤色。</dd>
+				</dl>
+			</div>
+		</div>
 	</body>
 </html>

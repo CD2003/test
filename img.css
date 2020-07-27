@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+img.sample3-0
+{
+	margin:10px;
+}
+
+img.sample3-1
+{
+	border-width:2px;
+	border-color:#ff6600;
+	border-style:solid;
+}
+
+img.sample3-2
+{
+	border:4px #009966 dotted;
+}

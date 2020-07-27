@@ -99,7 +99,7 @@
 				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;img</font>&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "pink_b">width&nbsp;&equals;</font>&nbsp;&quot;185&Prime;&nbsp;<font id = "pink_b">height&nbsp;&equals;</font>&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&quot;&Prime;<font id = "pink_b">&gt;</font><br>
 				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;img</font>&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "pink_b">width&nbsp;&equals;</font>&nbsp;&quot;100&Prime;&nbsp;<font id = "pink_b">height&nbsp;&equals;</font>&nbsp;&quot;300&Prime;&nbsp;alt&nbsp;&equals;&quot;&Prime;<font id = "pink_b">&gt;</font><br>
 				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">&lt;img</font>&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "pink_b">width&nbsp;&equals;</font>&nbsp;&quot;25&percnt;&Prime;&nbsp;<font id = "pink_b">height&nbsp;&equals;</font>&nbsp;&quot;20&percnt;&Prime;&nbsp;alt&nbsp;&equals;&quot;&Prime;<font id = "pink_b">&gt;</font><br>
-				&emsp;&emsp;&emsp;&emsp;&lt;&sol;div&gt;<br>
+				&emsp;&emsp;&emspG;&emsp;&lt;&sol;div&gt;<br>
 				&lt;&sol;body&gt;<br>
 			</div>
 		</div>
@@ -115,6 +115,146 @@
 					<img src = "2Cats.JPG" width = "185" height = "200" alt = "">
 					<img src = "2Cats.JPG" width = "100" height = "300" alt = "">
 					<img src = "2Cats.JPG" width = "25%" height = "20%" alt = "">
+				</div>
+			</div>
+		</div>
+
+
+		<h2 id = "border">
+			<h2 id = "def_title">
+				画像の枠線を指定する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<table>
+				<tr><td><font id = "orange_b">border-width</font>&nbsp;&colon;&nbsp;&starf;</td><td>枠線の幅</td></tr>
+				<tr><td><font id = "orange_b">border-color</font>&nbsp;&colon;&nbsp;&diams;</td><td>枠線の色</td></tr>
+				<tr><td><font id = "orange_b">border-style</font>&nbsp;&colon;&nbsp;&utrif;</td><td>枠線の種類</td></tr>
+				<tr><td><font id = "orange_b">border</font>&nbsp;&colon;&nbsp;&starf;&nbsp;&diams;&nbsp;&utrif;</td><td>枠線の一括指定</td></tr>
+			</table>
+		</h2>
+
+		<p>
+			画像の枠線は、CSSのボーダー関連のプロパティで指定する。<br>
+			border-width、border-color、border-styleプロパティは、それぞれ上下左右のボーダー&lpar;枠線&rpar;の幅、色、種類を一括して指定するプロパティである。いずれも値が1つだけのときは上下左右に同じ値が適用されるが、2&sim;4個の値を半角スペースで区切って並べることで、値の数によって下記のように適用される。<br>
+			<br>
+			<table class = "sample2">
+				<tr><td>&starf;</td><td>上下左右同じ</td></tr>
+				<tr><td>&starf;&nbsp;&starf;</td><td>上下、左右</td></tr>
+				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;</td><td>上、左右、下</td></tr>
+				<tr><td>&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;</td><td>上、右、下、左</td></tr>
+			</table>
+			<br>
+			なお、border-widthプロパティを有効にするには、border-styleプロパティで枠線の種類をしておくこと。
+		</p>
+
+		<h3 id = "aqua_b">
+			枠線の幅
+		</h3>
+
+		<p>
+			幅指定は以下を指定する。
+		</p>
+
+		<table>
+			<tr><td>thin</td><td>細い線</td><td class = "sample2-4">細い線</td></tr>
+			<tr><td>midium</td><td>中くらいの線</td><td class = "sample2-5">中くらいの線</td></tr>
+			<tr><td>thick</td><td>太い線</td><td class = "sample2-6">太い線</td></tr>
+			<tr><td>実数値&plus;単位</td><td>数値に単位を付けてボーダー幅を指定</td><td class = "sample2-7">10px</td></tr>
+		</table>
+
+		<h3 id = "aqua_b">
+			枠線の色
+		</h3>
+
+		<p>
+			枠線の色は、border-colorプロパテティで指定する。
+		</p>
+
+		<table>
+			<tr><td>色</td><td>RGB値もしくはキーワード&lpar;色名&rpar;で指定</td></tr>
+			<tr><td>transparent</td><td>透明を指定&lpar;ボーダーの幅は保持&rpar;</td></tr>
+		</table>
+
+		<h3 id = "aqua_b">
+			枠線の種類
+		</h3>
+
+		<p>
+			枠線の種類は、border-styleプロパティで指定する。
+		</p>
+
+		<table>
+			<tr><td>dotted</td><td class = "sample2-10">点線</td></tr>
+			<tr><td>dashed</td><td class = "sample2-11">破線</td></tr>
+			<tr><td>solid</td><td class = "sample2-12">実線</td></tr>
+			<tr><td>double</td><td class = "sample2-13">二重線</td></tr>
+			<tr><td>groove</td><td class = "sample2-14">凹んだように見える線</td></tr>
+			<tr><td>ridge</td><td class = "sample2-15">浮き上がったように見える線</td></tr>
+			<tr><td>inset</td><td class = "sample2-16">内側が凹んだように見える線</td></tr>
+			<tr><td>outset</td><td class = "sample2-17">内側が浮き上がったように見える線</td></tr>
+			<tr><td>none、hidden</td><td>ボーダー非表示</td></tr>
+		</table>
+
+		<h3 id = "aqua_b">
+			一括して指定する
+		</h3>
+
+		<p>
+			ボーダーの一括指定は、borderプロパティを指定する。
+
+		<table class = "Attribution">
+			<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td class = "AttributionL">&starf;</td><td class = "Attribution">&quot;枠線の幅&Prime;項を参照</td><td class = "Attribution">枠線の幅を指定する。</td><tr>
+				<tr><td class = "AttributionL">&diams;</td><td class = "Attribution">&quot;枠線の種類&Prime;項を参照</td><td class = "Attribution">枠線の種類を指定する。</td><tr>
+				<tr><td class = "AttributionL">&utrif;</td><td class = "Attribution">&quot;枠線の色&Prime;項を参照</td><td class = "Attribution">枠線の色を指定する。</td><tr>
+			</tbody>
+		</table>
+		<br>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lbrack;&nbsp;html&nbsp;&rbrack;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;div&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample1&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;185&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&quot;&Prime;&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample2&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;185&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&quot;&Prime;&gt;</font><br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;div&gt;<br>
+				&lt;&sol;body&gt;<br>
+				<br>
+				&lbrack;&nbsp;css&nbsp;&rbrack;<br>
+				img&nbsp;&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;margin&colon;10px&semi;<br>
+				&rbrace;<br>
+				<br>
+				img.sample3-1<br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border-width</font>&colon;2px&semi;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border-color</font>&colon;&sharp;ff6600&semi;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border-style</font>&colon;solid&semi;<br>
+				&rbrace;<br>
+				<br>
+				img.sample3-2&nbsp;&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">border</font>&colon;4px&nbsp;&sharp;009966&nbsp;dotted&semi;<br>
+				&rbrace;<br>
+			</div>
+		</div>
+		
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_fram3">
+			<div id = "test">
+				<div>		
+					<img src = "2Cats.JPG" class = "sample3-1" width = "185" height = "200" alt = "">
+					<img src = "2Cats.JPG" class = "sample3-2" width = "185" height = "200" alt = "">
 				</div>
 			</div>
 		</div>

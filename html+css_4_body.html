@@ -258,5 +258,76 @@
 				</div>
 			</div>
 		</div>
+
+
+		<h2 id = "alignment">
+			<h2 id = "def_title">
+				画像とテキストとの並び方を指定する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">vertical-align</font>&nbsp;&colon;&nbsp;&starf;
+		</h2>
+
+		<p>
+			画像はインライン要素であるため、通常はテキストと一緒に1つの行の中に配置されます。その場合の画像とテキストの並び方には、vertical-alignプロパティで指定する。<br>
+			vertical-alignプロパティは、指定要素が表示される行の中で縦位置を指定する。
+		</p>
+		<br>
+
+		<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法
+		</h3>
+
+		<table class = "Attribution">
+			<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td class = "AttributionL" rowspan = "10">&starf;</td><td class = "Attribution">baseline</td><td class = "Attribution">要素ボックスのベースラインを親要素ボックスのベースラインに揃える。</td></tr>
+				<tr><td class = "Attribution">top</td><td class = "Attribution">要素ボックスの上を親要素ボックスの上に揃える。</td></tr>
+				<tr><td class = "Attribution">middle</td><td class = "Attribution">要素ボックスの中心を親要素ボックスの小文字xの中心に揃える。</td></tr>
+				<tr><td class = "Attribution">bottom</td><td class = "Attribution">要素ボックスの下を親要素ボックスの下に揃える。</td></tr>
+				<tr><td class = "Attribution">text-top</td><td class = "Attribution">要素の上辺を親要素のフォントの上辺に揃える。</td></tr>
+				<tr><td class = "Attribution">text-bottom</td><td class = "Attribution">要素の下辺を親要素のフォントの下辺に揃える。</td></tr>
+				<tr><td class = "Attribution">sub</td><td class = "Attribution">その要素を下付き文字にする。</td></tr>
+				<tr><td class = "Attribution">super</td><td class = "Attribution">その要素を上付き文字にする。</td></tr>
+				<tr><td class = "Attribution">実数値&plus;単位</td><td class = "Attribution">数値に単位を付けて要素をどれだけ上げるか&lpar;マイナス値の場合は下げる&rpar;を指定する。</td></tr>
+				<tr><td class = "Attribution">数値&plus;&percnt;</td><td class = "Attribution">line-heightプロパティの値に対する割合でその要素をどれだけ上げる&lpar;マイナス時は下げる&rpar;かを指定する。</td></tr>
+
+			</tbody>
+		</table>
+		<br>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;&nbsp;html&nbsp;&gt;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample4-1&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample4-3&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample4-3&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
+
+				&lt;&sol;body&gt;<br>
+			</div>
+		</div>
+		
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_fram3">
+			<div id = "test">
+				<div>		
+					<img src = "2Cats.JPG" alt = "コロンとレオ">
+				</div>
+				<div>
+					<img src = "2Cats2.jpg" alt = "コロンとレオ">
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

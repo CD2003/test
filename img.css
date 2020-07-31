@@ -16,3 +16,28 @@ img.sample3-2
 {
 	border:4px #009966 dotted;
 }
+
+img.sample4-1
+{
+	vertical-align:text-top;
+}
+
+img.sample4-2
+{
+	vertical-align:middle;
+}
+
+img.sample4-3
+{
+	vertical-align:text-bottom;
+}
+
+img.sample5-1
+{
+	float:left;
+}
+
+p.sample6-1
+{
+	clear:left;
+}

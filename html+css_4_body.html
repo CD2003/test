@@ -306,11 +306,31 @@
 				&lt;&nbsp;html&nbsp;&gt;<br>
 				&lt;body&gt;<br>
 				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample4-1&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample4-3&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;id&nbsp;&equals;&nbsp;&quot;sample4-3&Prime;&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
-
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "green_b">class&nbsp;&equals;&nbsp;&quot;sample4-1&Prime;</font>&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "green_b">class&nbsp;&equals;&nbsp;&quot;sample4-2&Prime;</font>&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "green_b">class&nbsp;&equals;&nbsp;&quot;sample4-3&Prime;</font>&nbsp;width&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;height&nbsp;&equals;&nbsp;&quot;200&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;&Prime;&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
 				&lt;&sol;body&gt;<br>
+				<br>
+				&lt;&nbsp;CSS&nbsp;&gt;<br>
+				<font id = "green_b">img.sample4-1</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">vertical-align</font>&colon;text-top&semi;<br>
+				&rbrace;<br>
+				<br>
+				<font id = "green_b">img.sample4-2</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">vertical-align</font>&colon;middle&semi;<br>
+				&rbrace;<br>
+				<br>
+				<font id = "green_b">img.sample4-3</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">vertical-align</font>&colon;text-bottom&semi;<br>
+				&rbrace;<br>
 			</div>
 		</div>
 		
@@ -321,12 +341,148 @@
 
 		<div id = "nav_fram3">
 			<div id = "test">
-				<div>		
-					<img src = "2Cats.JPG" alt = "コロンとレオ">
-				</div>
-				<div>
-					<img src = "2Cats2.jpg" alt = "コロンとレオ">
-				</div>
+				<p>		
+					<img src = "2Cats.JPG" class = "sample4-1" width = "200" height = "200" alt = "">text-top
+				</p>
+				<p>
+					<img src = "2Cats.JPG" class = "sample4-2" width = "200" height = "200" alt = "">middle
+				</p>
+				<p>
+					<img src = "2Cats.JPG" class = "sample4-3" width = "200" height = "200" alt = "">text-bottom
+				</p>
+			</div>
+		</div>
+
+
+		<h2 id = "float">
+			<h2 id = "def_title">
+				画像にテキストを回り込ませる
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">float</font>&nbsp;&colon;&nbsp;&starf;
+		</h2>
+
+		<p>
+			画像にテキストを回り困る場合には、CSSのfloatプロパティを使用する。<br>
+			floatプロパティは対象の要素ボックス領域を左、あるいは右に寄せ、あとに続く内容をその反対側に回り込ませる。
+		</p>
+		<br>
+
+		<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法
+		</h3>
+
+		<table class = "Attribution">
+			<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td class = "AttributionL" rowspan = "2">&starf;</td><td class = "Attribution">left</td><td class = "Attribution">要素ボックスを左側に配置し、あとに続く内容を右側に回り込ませる。</td></tr>
+				<tr><td class = "Attribution">right</td><td class = "Attribution">要素ボックスを右側に配置し、あとに続く内容を左側に回り込ませる。</td></tr>
+			</tbody>
+		</table>
+		<br>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;&nbsp;html&nbsp;&gt;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<font id = "green_b">img</font>&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;コロンとレオ&Prime;&gt;コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&lt;&sol;body&gt;<br>
+				<br>
+				&lt;&nbsp;CSS&nbsp;&gt;<br>
+				<font id = "green_b">img</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">float</font>&colon;left&semi;<br>
+				&rbrace;<br>
+			</div>
+		</div>
+		
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_fram3">
+			<div id = "test">
+				<p>		
+					<img src = "2Cats.JPG" class = "sample5-1" alt = "コロンとレオ">コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。
+				</p>
+				<br clear = "left">
+			</div>
+		</div>
+
+
+		<h2 id = "clear">
+			<h2 id = "def_title">
+				画像にテキストを回り込みを解除する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">clear</font>&nbsp;&colon;&nbsp;&starf;
+		</h2>
+
+		<p>
+			floatプロパティによる回り込みは、CSSのclearプロパティで解除できる。
+		</p>
+		<br>
+
+		<h3 id = "aqua_b">
+				値&lpar;&starf;&rpar;の指定方法
+		</h3>
+
+		<table class = "Attribution">
+			<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td class = "AttributionL" rowspan = "3">&starf;</td><td class = "Attribution">left</td><td class = "Attribution">左側要素&lpar;float&colon;left&rpar;に対する回り込みを解除する。</td></tr>
+				<tr><td class = "Attribution">right</td><td class = "Attribution">右側要素&lpar;float&colon;right&rpar;に対する回り込みを解除する。</td></tr>
+				<tr><td class = "Attribution">both</td><td class = "Attribution">左右全ての要素に対する回り込みを解除する。</td></tr>
+			</tbody>
+		</table>
+		<br>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;&nbsp;html&nbsp;&gt;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;alt&nbsp;&equals;&nbsp;&quot;コロンとレオ&Prime;&gt;コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&nbsp;<font id = "green_b">class&nbsp;&equals;&nbsp;&quot;sample6-1&Prime;</font>&gt;<br>
+				なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&lt;&sol;body&gt;<br>
+				<br>
+				&lt;&nbsp;CSS&nbsp;&gt;<br>
+				<font id = "green_b">p.sample6-1</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">clear</font>&colon;left&semi;<br>
+				&rbrace;<br>
+			</div>
+		</div>
+		
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_fram3">
+			<div id = "test">
+				<p>		
+					<img src = "2Cats.JPG" class = "sample5-1" alt = "コロンとレオ">コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。
+				</p>
+				<p class = "sample6-1">
+					なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。
+				</p>
 			</div>
 		</div>
 	</body>

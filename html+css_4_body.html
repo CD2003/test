@@ -483,6 +483,228 @@
 				<p class = "sample6-1">
 					なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。
 				</p>
+				<br clear = "left">
+			</div>
+		</div>
+
+
+		<h2 id = "margin">
+			<h2 id = "def_title">
+				画像とテキストの間隔を調整する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<table>
+				<tr><td><font id = "orange_b">margin-top</font>&nbsp;&colon;&nbsp;&starf;</td><td>上のマージン</td></tr>
+				<tr><td><font id = "orange_b">margin-right</font>&nbsp;&colon;&nbsp;&starf;</td><td>右のマージン</td></tr>
+				<tr><td><font id = "orange_b">margin-bottom</font>&nbsp;&colon;&nbsp;&starf;</td><td>下のマージン</td></tr>
+				<tr><td><font id = "orange_b">margin-left</font>&nbsp;&colon;&nbsp;&starf;</td><td>左のマージン</td></tr>
+				<tr><td><font id = "orange_b">margin</font>&nbsp;&colon;&nbsp;&diams;</td><td>マージンの一括指定</td></tr>
+			</table>
+		</h2>
+
+		<p>
+			画像とテキストの間隔は、CSSのmarginプロパティを利用し、画像の周辺のマージン(余白)として指定する。
+		</p>
+		<br>
+
+		<h3 id = "aqua_b">
+				値の指定方法
+		</h3>
+
+		<table class = "Attribution">
+			<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td class = "AttributionL" rowspan = "3">&starf;、&diams;</td><td class = "Attribution">実数値&plus;単位</td><td class = "Attribution">数値に単位を付けてマージンを指定する。。</td></tr>
+				<tr><td class = "Attribution">パーセント値&plus;&percnt;</td><td class = "Attribution">包含ブロックの横幅に対する割合でマージンを指定する&lpar;高さの割合でないことに注意&rpar;。</td></tr>
+				<tr><td class = "Attribution">auto</td><td class = "Attribution">自動で調整する。</td></tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h3 id = "aqua_b">
+				一括指定の方法
+		</h3>
+
+		<p>
+			marginプロパティは上下左右のマージンを一括で指定できる。マイナスの値の設定可能。
+		</p>
+
+		<table>
+			<tr><td>&starf;</td><td>上下左右同じ</td></tr>
+			<tr><td>&starf;&starf;</td><td>上下、左右</td></tr>
+			<tr><td>&starf;&starf;&starf;</td><td>上、左右、下</td></tr>
+			<tr><td>&starf;&starf;&starf;&starf;</td><td>上、左、下、右</td></tr>
+		</table>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;&nbsp;html&nbsp;&gt;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "green_b">class&nbsp;&equals;&quot;sample7-1&Prime;</font>&nbsp;alt&nbsp;&equals;&nbsp;&quot;コロンとレオ&Prime;&gt;コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。<BR>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&lt;&sol;body&gt;<br>
+				<br>
+				&lt;&nbsp;CSS&nbsp;&gt;<br>
+				<font id = "green_b">img.sample7-1</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">margin</font>&colon;0&nbsp;0&nbsp;10pt&nbsp;10pt&semi;<br>
+				&rbrace;<br>
+			</div>
+		</div>
+		
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_fram3">
+			<div id = "test">
+				<p>		
+					<img src = "2Cats.JPG" class = "sample7-1" alt = "コロンとレオ">コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。
+				</p>
+				<br clear = "left">
+			</div>
+		</div>
+		<br><br>
+
+		<h2 id = "map">
+			<h2 id = "def_title">
+				イメージマップを作成する
+			</h2>
+		</h2>
+
+		<h2 id = "def_com">
+			<font id = "orange_b">&lt;img</font>&nbsp;src&nbsp;&equals;&nbsp;&quot;&starf;&Prime;&nbsp;<font id = "orange_b">usemap&nbsp;&equals;</font>&nbsp;&quot;&sharp;&diams;&Prime;&nbsp;<font id = "orange_b">alt&nbsp;&equals;</font>&nbsp;&quot;&dtrif;&Prime;<font id = "orange_b">&gt;</font><br>
+			<font id = "orange_b">&lt;map&nbsp;name&nbsp;&equals;</font>&nbsp;&quot;&diams;&Prime;<font id = "orange_b">&gt;</font>&sim;<font id = "orange_b">&lt;&sol;map&gt;</font><br>
+			<font id = "orange_b">&lt;area&nbsp;shape&nbsp;&equals;</font>&nbsp;&quot;&utrif;&Prime;&nbsp;<font id = "orange_b">coords&nbsp;&equals;</font>&nbsp;&quot;&circle;&Prime;&nbsp;<font id = "orange_b">href&nbsp;&equals;&nbsp;</font>&quot;&square;&Prime;&nbsp;<font id = "orange_b">alt&nbsp;&equals;</font>&nbsp;&quot;&dtrif;&Prime;<font id = "orange_b">&gt;</font>
+		</h2>
+
+		<p>
+			イメージマップ機能を利用すると、画像の特定の領域にリンクを設定することができる。ここで解説するクライアントサイドイメージマップは全処理をブラウザ側で実行するものであり、HTMLタグで作成できる。	
+		</p>
+		<br>
+
+		<h3 id = "aqua_b">
+			&lt;img&gt;と&lt;map&gt;	
+		</h3>
+
+		<p>
+			&lt;map&nbsp;name&nbsp;&equals;&nbsp;&quot;&diams;&Prime;&gt;&sim;&lt;&sol;map&gt;で、画像のクライアントサイド・イメージマップの定義と、そのイメージマップの名前を定義する。<br>
+			&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;&starf;&Prime;&nbsp;usemap&nbsp;&equals;&nbsp;&quot;&sharp;&diams;&Prime;&gt;はusemap属性に&lt;map&gt;タグのnameゾック性で指定した名前を指定して、画像とイメージマップの関連付けを行う。
+
+			<table class = "Attribution">
+				<thead>
+					<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+				</thead>
+
+				<tbody>
+					<tr><td class = "AttributionL">&starf;</td><td class = "Attribution">画像ファイル名&lpar;URL&rpar;</td><td class = "Attribution">画像ファイルのURLを指定する。</td></tr>
+					<tr><td class = "AttributionL">&diams;</td><td class = "Attribution">マップ名</td><td class = "Attribution">マップ名を指定する。。</td></tr>
+				</tbody>
+			</table>
+		</p>
+
+		<h3 id = "aqua_b">
+			&lt;area&gt;
+		</h3>
+
+		<p>
+			リンク領域は&lt;area&gt;タグで次の属性を用いて指定する。<br>
+			<font id = "aqua_b">shape属性</font><br>
+			&emsp;画像上でマップとして定義される領域の形を指定する。
+
+			<table class = "Attribution">
+				<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+				</thead>
+
+				<tbody>
+					<tr><td class = "AttributionL" rowspan = "4">&utrif;</td><td class = "Attribution">defalult</td><td class = "Attribution">全体</td></tr>
+					<tr><td class = "Attribution">rect</td><td class = "Attribution">四角形</td></tr>
+					<tr><td class = "Attribution">circle</td><td class = "Attribution">円</td></tr>
+					<tr><td class = "Attribution">poly</td><td class = "Attribution">多角形</td></tr>
+				</tbody>
+			</table>
+			<br>
+			<font id = "aqua_b">coord属性</font><br>
+			&emsp;領域の座標を指定する。ピクセルで指定し、各座標値はカンマ&lpar;,&rpar;で区切る。<br>
+
+			<table class = "Attribution">
+				<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+				</thead>
+
+				<tbody>
+					<tr><td class = "AttributionL" rowspan = "4">&circle;</td><td class = "Attribution">左上のX座標,左上のY座標,右下のX座標,右下のY座標<td class = "Attribution">rectの場合</td></tr>
+					<tr><td class = "Attribution">中心のX座標,中心のY座標,半径</td><td class = "Attribution">円の場合</td></tr>
+					<tr><td class = "Attribution">全ての角の座標を&lpar;X座標,Y座標&rpar;の順で指定し、最後に最初の座標を入力</td><td class = "Attribution">多角形の場合</td></tr>
+				</tbody>
+			</table>
+		</p>
+
+		<table class = "Attribution">
+			<thead>
+				<tr class = "Attribution"><th class = "Attribution">&emsp;属性&emsp;</th><th class = "Attribution">&emsp;指定方法&emsp;</th><th class = "Attribution">説明</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td class = "AttributionL">&starf;</td><td class = "Attribution">画像ファイル名&lpar;URL&rpar;</td><td class = "Attribution">画像ファイルのURLを指定する。。</td></tr>
+				<tr><td class = "AttributionL">&diams;</td><td class = "Attribution">マップ名</td><td class = "Attribution">マップ名を指定する。。</td></tr>
+				<tr><td class = "AttributionL">&diams;</td><td class = "Attribution">マップ名</td><td class = "Attribution">マップ名を指定する。。</td></tr>
+				<tr><td class = "Attribution">パーセント値&plus;&percnt;</td><td class = "Attribution">包含ブロックの横幅に対する割合でマージンを指定する&lpar;高さの割合でないことに注意&rpar;。</td></tr>
+				<tr><td class = "Attribution">auto</td><td class = "Attribution">自動で調整する。</td></tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h3 id = "aqua_b">
+				一括指定の方法
+		</h3>
+
+		<p>
+			marginプロパティは上下左右のマージンを一括で指定できる。マイナスの値の設定可能。
+		</p>
+
+		<table>
+			<tr><td>&starf;</td><td>上下左右同じ</td></tr>
+			<tr><td>&starf;&starf;</td><td>上下、左右</td></tr>
+			<tr><td>&starf;&starf;&starf;</td><td>上、左右、下</td></tr>
+			<tr><td>&starf;&starf;&starf;&starf;</td><td>上、左、下、右</td></tr>
+		</table>
+
+		<div id = "nav_frame">
+			<div id = "test">
+				&lt;&nbsp;html&nbsp;&gt;<br>
+				&lt;body&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;img&nbsp;src&nbsp;&equals;&nbsp;&quot;2Cats.jpg&Prime;&nbsp;<font id = "green_b">class&nbsp;&equals;&quot;sample7-1&Prime;</font>&nbsp;alt&nbsp;&equals;&nbsp;&quot;コロンとレオ&Prime;&gt;コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。<BR>
+				&emsp;&emsp;&emsp;&emsp;&lt;&sol;p&gt;<br>
+				&lt;&sol;body&gt;<br>
+				<br>
+				&lt;&nbsp;CSS&nbsp;&gt;<br>
+				<font id = "green_b">img.sample7-1</font><br>
+				&lbrace;<br>
+				&emsp;&emsp;&emsp;&emsp;<font id = "pink_b">margin</font>&colon;0&nbsp;0&nbsp;10pt&nbsp;10pt&semi;<br>
+				&rbrace;<br>
+			</div>
+		</div>
+		
+
+		<h3 id = "nav_margin">
+			&#9702;出力結果
+		</h3>
+
+		<div id = "nav_fram3">
+			<div id = "test">
+				<p>		
+					<img src = "2Cats.JPG" class = "sample7-1" alt = "コロンとレオ">コロンとレオは姉弟で、5年前に拾いました。コロンは長毛の白猫で、レオは短毛の白黒ハチワレです。なお、妹猫にみかんがいます。みかんは短毛のキジ白でコロン、レオとは血の繋がりはありませんが、仲良く暮らしております。
+				</p>
 			</div>
 		</div>
 	</body>

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+charset "UTF-8";
 
 img.sample3-0
 {
@@ -34,7 +34,7 @@ img.sample4-3
 
 img.sample5-1
 {
-	float:left;
+	float:right;
 }
 
 p.sample6-1
@@ -42,8 +42,7 @@ p.sample6-1
 	clear:left;
 }
 
-img.sample7-1
+.sample7-1
 {
 	float:left;
-	margin:10cm;
 }

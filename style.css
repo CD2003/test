@@ -3,6 +3,7 @@
 @import url("table.css");
 @import url("list.css");
 @import url("img.css");
+@import url("box.css");
 /* クラスセレクタ
    他に似た機能を持つセレクタにはIDセレクタがあるが、
    通常はクラスセレクタを用い、Javascriptで使用することがある */
